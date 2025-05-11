@@ -1,7 +1,7 @@
 #include "vector.h"
 
 template <typename T>
-Vector<T>::Vector(size_t init_capacity=10) : size(0), capacity(init_capacity) {
+Vector<T>::Vector(size_t init_capacity) : size(0), capacity(init_capacity) {
     data = new T[capacity];
 }
 
@@ -38,3 +38,4 @@ template <typename T>
 T& Vector<T>::operator[](size_t index) {
     return data[index];
 }
+

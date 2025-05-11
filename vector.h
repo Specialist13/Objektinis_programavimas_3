@@ -11,7 +11,7 @@ private:
     size_t size;
     size_t capacity;
 public:
-    Vector(size_t init_capacity);
+    Vector(size_t init_capacity=10);
     ~Vector();
     Vector& operator= (const Vector& other);
     T& at(size_t index);
@@ -23,10 +23,10 @@ public:
     T* rbegin(T value);
     T* rend(T value);
     bool empty() const;
-    size_t size() const;
+    size_t getSize() const;
     size_t max_size() const;
     void reserve(size_t new_capacity);
-    size_t capacity() const;
+    size_t getCapacity() const;
     void shrink_to_fit();
     void clear();
     void insert(size_t index, const T& value);
@@ -44,5 +44,7 @@ public:
     bool operator> (const Vector& other) const;
     bool operator>= (const Vector& other) const;
 };
+
+#include "vector.tpp"
 
 #endif
