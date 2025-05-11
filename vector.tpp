@@ -68,3 +68,36 @@ template <typename T>
 T* Vector<T>::rend() {
     return data-1;
 }
+
+template <typename T>
+bool Vector<T>::empty() const {
+    return size==0;
+}
+
+template <typename T>
+size_t Vector<T>::getSize() const {
+    return size;
+}
+
+template <typename T>
+size_t Vector<T>::max_size() const {
+    return std::numeric_limits<size_t>::max() / sizeof(T);;
+}
+
+template <typename T>
+void Vector<T>::reserve(size_t new_capacity) {
+    if (new_capacity>capacity){
+        T* temp_data=new T[new_capacity];
+        for (size_t i=0; i<size; i++){
+            temp_data[i]=data[i];
+        }
+        delete data[];
+        capacity=new_capacity;
+        data=temp_data;
+    }
+}
+
+template <typename T>
+size_t Vector<T>::getCapacity() const {
+    return capacity;
+}

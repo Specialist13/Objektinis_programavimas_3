@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <limits>
 
 template <typename T>
 class Vector {
