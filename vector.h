@@ -13,7 +13,7 @@ private:
 public:
     Vector(size_t init_capacity);
     ~Vector();
-    operator= (const Vector& other);
+    Vector& operator= (const Vector& other);
     T& at(size_t index);
     T& operator[](size_t index);
     T& front();
@@ -37,12 +37,12 @@ public:
     void pop_back();
     void resize(size_t new_size);
     void swap(Vector& other);
-    operator== (const Vector& other) const;
-    operator!= (const Vector& other) const;
-    operator< (const Vector& other) const;
-    operator<= (const Vector& other) const;
-    operator> (const Vector& other) const;
-    operator>= (const Vector& other) const;
+    bool operator== (const Vector& other) const;
+    bool operator!= (const Vector& other) const;
+    bool operator< (const Vector& other) const;
+    bool operator<= (const Vector& other) const;
+    bool operator> (const Vector& other) const;
+    bool operator>= (const Vector& other) const;
 };
 
 #endif
