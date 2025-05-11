@@ -35,6 +35,8 @@ public:
     void emplace(size_t index, const T& value);
     void push_back(const T& value);
     void emplace_back(const T& value);
+    template <typename Range>
+    void append_range(const Range& other);
     void pop_back();
     void resize(size_t new_size);
     void swap(Vector& other);

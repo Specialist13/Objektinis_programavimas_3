@@ -116,3 +116,34 @@ void Vector<T>::clear() {
     }
     size=0;
 }
+
+template <typename T>
+void Vector<T>::insert(size_t index, const T& value){
+    if (index>size) throw std::out_of_range("Insert position out of range");
+    if (size==capacity) resize(capacity==0 ? 1 : capacity*2);
+    for (size_t i=size; i>index; i--){
+        data[i]=data[i-1];
+    }
+    data[pos]=value;
+    size++;
+}
+
+template <typename T>
+void Vector<T>::erase(size_t index) {
+    if (index>=size) throw std::out_of_range("Erase position out of range");
+    for (size_t i=index; i<size-1; i++){
+        data[i]=data[i+1];
+    }
+    data[size-1].~T();
+    size--;
+}
+
+template <typename T>
+template <typename Range>
+void Vector<T>::append_range(const Range& other) {
+    for (const auto& item : other) {
+        if (size >= capacity)
+            reserve(capacity * 2);
+        data[size++] = item;
+    }
+}
