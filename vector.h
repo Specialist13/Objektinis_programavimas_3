@@ -18,10 +18,10 @@ public:
     T& operator[](size_t index);
     T& front();
     T& back();
-    T* begin(T value);
-    T* end(T value);
-    T* rbegin(T value);
-    T* rend(T value);
+    T* begin();
+    T* end();
+    T* rbegin();
+    T* rend();
     bool empty() const;
     size_t getSize() const;
     size_t max_size() const;

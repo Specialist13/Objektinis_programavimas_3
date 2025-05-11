@@ -48,3 +48,23 @@ template <typename T>
 T& Vector<T>::back() {
     return data[size-1];
 }
+
+template <typename T>
+T* Vector<T>::begin() {
+    return data;
+}
+
+template <typename T>
+T* Vector<T>::end() {
+    return data+size;
+}
+
+template <typename T>
+T* Vector<T>::rbegin() {
+    return data+size-1;
+}
+
+template <typename T>
+T* Vector<T>::rend() {
+    return data-1;
+}
