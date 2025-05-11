@@ -39,3 +39,12 @@ T& Vector<T>::operator[](size_t index) {
     return data[index];
 }
 
+template <typename T>
+T& Vector<T>::front() {
+    return data[0];
+}
+
+template <typename T>
+T& Vector<T>::back() {
+    return data[size-1];
+}
