@@ -91,7 +91,7 @@ void Vector<T>::reserve(size_t new_capacity) {
         for (size_t i=0; i<size; i++){
             temp_data[i]=data[i];
         }
-        delete data[];
+        delete[] data;
         capacity=new_capacity;
         data=temp_data;
     }
@@ -100,4 +100,19 @@ void Vector<T>::reserve(size_t new_capacity) {
 template <typename T>
 size_t Vector<T>::getCapacity() const {
     return capacity;
+}
+
+template <typename T>
+void Vector<T>::shrink_to_fit() {
+    if (capacity>size){
+        resize(size);
+    }
+}
+
+template <typename T>
+void Vector<T>::clear() {
+    for (size_t i=0; i<size; i++){
+        data[i].~T();
+    }
+    size=0;
 }
