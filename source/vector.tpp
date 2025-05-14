@@ -185,8 +185,12 @@ void Vector<T>::shrink_to_fit() {
 
 template <typename T>
 void Vector<T>::clear() {
-    size=0;
+    delete[] data;
+    data = nullptr;
+    size = 0;
+    capacity = 0;
 }
+
 
 template <typename T>
 void Vector<T>::insert(size_t index, const T& value){
