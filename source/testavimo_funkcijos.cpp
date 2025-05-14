@@ -129,4 +129,30 @@ void duomenu_apdorojimo_testavimas (){
     }
 }
 
+void konteinerio_testavimas(){
+    unsigned int sz[5] = {10000, 100000, 1000000, 10000000, 100000000};
+    
+    for (int i=0; i<5; i++){
+        std::chrono::duration<double> galutinisV1{0};
+        std::vector<int> v1;
+        auto pradziaV1=std::chrono::high_resolution_clock::now();
+        for (int j=0; j<sz[i]; j++){
+            v1.push_back(j);
+        }
+        auto pabaigaV1=std::chrono::high_resolution_clock::now();
+        galutinisV1+=pabaigaV1-pradziaV1;
+        cout<<"std::vector laikas su "<<sz[i]<<"elementu: "<<galutinisV1.count()<<" s\n";
+    }
 
+    for (int i=0; i<5; i++){
+        std::chrono::duration<double> galutinisV2{0};
+        Vector<int> v2;
+        auto pradziaV2=std::chrono::high_resolution_clock::now();
+        for (int j=0; j<sz[i]; j++){
+            v2.push_back(j);
+        }
+        auto pabaigaV2=std::chrono::high_resolution_clock::now();
+        galutinisV2+=pabaigaV2-pradziaV2;
+        cout<<"Vector laikas su "<<sz[i]<<"elementu: "<<galutinisV2.count()<<" s\n";
+    }
+}

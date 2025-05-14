@@ -8,6 +8,6 @@ void testinis_skaitymas_is_failo (vector<Stud> &studentai, string failas);
 void testavimas(vector<Stud> &studentai);
 void failo_kurimo_testavimas ();
 void duomenu_apdorojimo_testavimas();
-
+void konteinerio_testavimas();
 
 #endif

@@ -11,6 +11,7 @@
 #include <chrono>
 #include <type_traits>
 #include <functional>
+#include "../include/vector.h"
 
 using std::cin;
 using std::cout;
