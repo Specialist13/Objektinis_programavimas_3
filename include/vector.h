@@ -14,7 +14,10 @@ private:
 public:
     Vector(size_t init_capacity=10);
     ~Vector();
+    Vector(const Vector& other);
     Vector& operator= (const Vector& other);
+    Vector(Vector&& other) noexcept;
+    Vector& operator= (Vector&& other) noexcept;
     void assign(size_t count, const T& value);
     void assign(const T* first, const T* last);
     void assign(const Vector& other);
@@ -48,8 +51,10 @@ public:
     bool operator<= (const Vector& other) const;
     bool operator> (const Vector& other) const;
     bool operator>= (const Vector& other) const;
+
+
 };
 
-#include "vector.tpp"
+#include "../source/vector.tpp"
 
 #endif

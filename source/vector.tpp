@@ -11,6 +11,14 @@ Vector<T>::~Vector() {
 }
 
 template <typename T>
+Vector<T>::Vector(const Vector& other) : size(other.size), capacity(other.capacity) {
+    data = new T[capacity];
+    for (size_t i = 0; i < size; ++i) {
+        data[i] = other.data[i];
+    }
+}
+
+template <typename T>
 Vector<T>& Vector<T>::operator=(const Vector& other) {
     if (this != &other) {
         delete[] data;
@@ -20,6 +28,27 @@ Vector<T>& Vector<T>::operator=(const Vector& other) {
         for (size_t i = 0; i < size; ++i) {
             data[i] = other.data[i];
         }
+    }
+    return *this;
+}
+
+template <typename T>
+Vector<T>::Vector(Vector&& other) noexcept : data(other.data), size(other.size), capacity(other.capacity) {
+    other.data = nullptr;
+    other.size = 0;
+    other.capacity = 0;
+}
+
+template <typename T>
+Vector<T>& Vector<T>::operator=(Vector&& other) noexcept {
+    if (this != &other) {
+        delete[] data;
+        data = other.data;
+        size = other.size;
+        capacity = other.capacity;
+        other.data = nullptr;
+        other.size = 0;
+        other.capacity = 0;
     }
     return *this;
 }
