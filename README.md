@@ -40,6 +40,7 @@ Išvedamas studento vardas, pavardė ir galutiniai pažymiai pagal vidurkį bei 
 | Vector | 0 s | 0.0005066 s | 0.0030259 s | 0.0273958 s | 0.353859 s |
 
 Visais atvejais mano sukurtas konteineris yra greitesnis nei std::vector.
+Abu konteineriai yra perskirstomi 25 kartus, kai vedami 10 milijonų studentų.
 
 # :chart: V1.1 Testavimas
 
