@@ -227,3 +227,42 @@ void Vector<T>::swap(Vector& other) {
     std::swap(size, other.size);
     std::swap(capacity, other.capacity);
 }
+
+template <typename T>
+bool Vector<T>::operator==(const Vector& other) const {
+    if (size != other.size) return false;
+    for (size_t i = 0; i < size; i++) {
+        if (data[i] != other.data[i]) return false;
+    }
+    return true;
+}
+
+template <typename T>
+bool Vector<T>::operator!=(const Vector& other) const {
+    return !(*this == other);
+}
+
+template <typename T>
+bool Vector<T>::operator<(const Vector& other) const {
+    size_t min_size = std::min(size, other.size);
+    for (size_t i = 0; i < min_size; i++) {
+        if (data[i] < other.data[i]) return true;
+        if (data[i] > other.data[i]) return false;
+    }
+    return size < other.size;
+}
+
+template <typename T>
+bool Vector<T>::operator<=(const Vector& other) const {
+    return *this < other || *this == other;
+}
+
+template <typename T>
+bool Vector<T>::operator>(const Vector& other) const {
+    return !(*this <= other);
+}
+
+template <typename T>
+bool Vector<T>::operator>=(const Vector& other) const {
+    return !(*this < other);
+}
