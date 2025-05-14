@@ -1,3 +1,10 @@
+# 📎 Instaliacijos intrukcijos
+
+1. Paleiskite ***setup.exe*** failą iš repositorijos
+2. Galite pasirinkti, ar norite darbalaukio nuorodos į programą
+3. Kitame lange spauskite "Install"
+4. Programą rasite savo kompiuteryje šioje vietoje: ```C:/Program files/VU/Emilis-Slabada```
+
 # :hammer_and_wrench: Kompiliavimo instrukcijos
 
 1. Atsisiųsti [MinGW make](https://sourceforge.net/projects/mingw/)
@@ -16,7 +23,9 @@ Atsidarę programą turėsite 9 pasirinkimus:
 6. Kurti failą ir testuoti jo sukurimo laiką – galite pasirinkti, kokio dydžio studentų failą sugeneruosite
 7. Skirstyti studentus iš failo į vargšiukus ir galvočius – iš anksčiau sugeneruotų failų vykdomas skirstymas pagal vidurkį ir jo metu testuojama įvesties trukmė, rikiavimas ir skirstymas
 8. Testuoti Stud klasės metodus
-9. Baigti darbą
+9. Testuoti std::vector ir Vector greitį
+10. Testuoti std::vector ir Vector perskirstymus
+11. Baigti darbą
 
 # :notebook_with_decorative_cover: Klasės aprašymas ir naudojimosi instrukcijos
 
