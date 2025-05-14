@@ -18,5 +18,5 @@ var class_stud =
     [ "egzaminas", "class_stud.html#a8db2a39b5038539018c6ffca51b606e5", null ],
     [ "galutinis_med", "class_stud.html#a88118b4184ccda551f57c42706457688", null ],
     [ "galutinis_vid", "class_stud.html#a059709cc6b6e924ff2edf83dac4f9320", null ],
-    [ "pazymiai", "class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a", null ]
+    [ "pazymiai", "class_stud.html#ab33271bda287ac5bb757baced48319d3", null ]
 ];

@@ -1,0 +1,66 @@
+\doxysection{vector.\+h}
+\hypertarget{vector_8h_source}{}\label{vector_8h_source}\index{include/vector.h@{include/vector.h}}
+\mbox{\hyperlink{vector_8h}{Eiti į šio failo dokumentaciją.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VECTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VECTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_a536da87a916c8bdf2565fa6d808337f2}{data}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_vector_a0a2dd54f141e234e098918299bbcc27c}{size}};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_vector_ab65c9775787e3529e5cbafb44782cf37}{capacity}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}(\textcolor{keywordtype}{size\_t}\ init\_capacity=10);}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_vector_afd524fac19e6d3d69db5198ffe2952b0}{\string~Vector}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_vector_a940f94b7c4a1c15a65a1ab6e13859dfe}{Vector}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ \mbox{\hyperlink{class_vector_a2fe37b54a47d28015829196cb5abec05}{operator=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other);}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_vector_a5ed9bb7852ccee071f8418d10182927f}{Vector}}(\mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ \mbox{\hyperlink{class_vector_a2fe37b54a47d28015829196cb5abec05}{operator=\ }}(\mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_ae8dfa135fec20c87550383b3ae20dff0}{assign}}(\textcolor{keywordtype}{size\_t}\ count,\ \textcolor{keyword}{const}\ T\&\ value);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a0a022117f286cad7058680d5f60e19a4}{assign}}(\textcolor{keyword}{const}\ T*\ first,\ \textcolor{keyword}{const}\ T*\ last);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a3a9fde23af55f8c878d1e536f58e3ce4}{assign}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other);}
+\DoxyCodeLine{00024\ \ \ \ \ T\&\ \mbox{\hyperlink{class_vector_a7495aa482571ad81f957802387770123}{at}}(\textcolor{keywordtype}{size\_t}\ index);}
+\DoxyCodeLine{00025\ \ \ \ \ T\&\ \mbox{\hyperlink{class_vector_a314b19cea6ad9ce76457e24ac8264bd8}{operator[]}}(\textcolor{keywordtype}{size\_t}\ index);}
+\DoxyCodeLine{00026\ \ \ \ \ T\&\ \mbox{\hyperlink{class_vector_a0061cc9127a9cbf541439121998a1fdd}{front}}();}
+\DoxyCodeLine{00027\ \ \ \ \ T\&\ \mbox{\hyperlink{class_vector_a6decf0bdeb6849bfcc151b2c514f639f}{back}}();}
+\DoxyCodeLine{00028\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_ad4ab3c154a8408f62e3b1d24fc140a80}{getData}}();}
+\DoxyCodeLine{00029\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_a48330adb902d17d3fbed6e83fd58976f}{begin}}();}
+\DoxyCodeLine{00030\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_aa8958aac9b8931d471cdd99428c2d535}{end}}();}
+\DoxyCodeLine{00031\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_a614448e9aca6f7d9e2c788e87ea142d7}{rbegin}}();}
+\DoxyCodeLine{00032\ \ \ \ \ T*\ \mbox{\hyperlink{class_vector_a8c9f1f9612dff2d18dde206b6d2d31e4}{rend}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_ad688a8a0dfbd07ea63d838058a436f79}{empty}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_vector_afb849f7ed7b5bc30b29679a0ace9f7c1}{getSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_vector_a442b72c70b33b62d49c99845385bba51}{max\_size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_afa0c4c5f0f2d2d7940180fbed0f46bc4}{reserve}}(\textcolor{keywordtype}{size\_t}\ new\_capacity);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_vector_ac249f0cd6a15ca3e4dd6cfa469d83245}{getCapacity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_ad6454ce193263b8000d4c18cb0c3a0c8}{shrink\_to\_fit}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a32ad98b135472b0ebc5d6cb3ae5d0085}{clear}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a597069ade585b770e87a588ab8313b76}{insert}}(\textcolor{keywordtype}{size\_t}\ index,\ \textcolor{keyword}{const}\ T\&\ value);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a369204d03cbb5750440ec38d7caad3bb}{erase}}(\textcolor{keywordtype}{size\_t}\ index);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a4415960a83615855ec32f8169f641786}{push\_back}}(\textcolor{keyword}{const}\ T\&\ value);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Range>}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a11e420bc69020ef522021bac1e78e392}{append\_range}}(\textcolor{keyword}{const}\ Range\&\ other);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_adcba035109febbe55cba2a25f8483ba6}{pop\_back}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_ae904067f0717793273fa2b6fe8fc9eb8}{resize}}(\textcolor{keywordtype}{size\_t}\ new\_size);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vector_a6b3ed4325e3451e917db94c574b13efc}{swap}}(\mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_a1b2b4d9dc3df91e091a709322b76859a}{operator==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_aeb226de8807a211671abc6864858bf6b}{operator!=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_abd4fc7036719f7a2d6603d314382b89d}{operator<\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_aacfd8d2dffb899bc87935b062a5693b4}{operator<=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_aba5a2729dbecd9873a9d4f7b2d0d2ce7}{operator>\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vector_aa52b8c5b80c74523303491db09fb4636}{operator>=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#include\ "{}../source/vector.tpp"{}}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

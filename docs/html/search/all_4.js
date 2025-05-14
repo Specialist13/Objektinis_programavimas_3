@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['headers_5fmain_2eh_0',['headers_main.h',['../headers__main_8h.html',1,'']]]
+  ['egzaminas_0',['egzaminas',['../class_stud.html#a8db2a39b5038539018c6ffca51b606e5',1,'Stud']]],
+  ['empty_1',['empty',['../class_vector.html#ad688a8a0dfbd07ea63d838058a436f79',1,'Vector']]],
+  ['end_2',['end',['../class_vector.html#aa8958aac9b8931d471cdd99428c2d535',1,'Vector']]],
+  ['erase_3',['erase',['../class_vector.html#a369204d03cbb5750440ec38d7caad3bb',1,'Vector']]]
 ];

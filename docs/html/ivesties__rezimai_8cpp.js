@@ -1,10 +1,10 @@
 var ivesties__rezimai_8cpp =
 [
     [ "failu_generavimas", "ivesties__rezimai_8cpp.html#ab955c524855de6254251fecb673164be", null ],
-    [ "pazymiu_generavimas", "ivesties__rezimai_8cpp.html#abd89af89caf0c887b4df1d007572e4c5", null ],
-    [ "ranka", "ivesties__rezimai_8cpp.html#a8d278cdb73655df418696510da7cd43e", null ],
-    [ "skaitymas_is_failo", "ivesties__rezimai_8cpp.html#a42cbadd48cb69fe022fc67e188524d0b", null ],
-    [ "strategija_1", "ivesties__rezimai_8cpp.html#acee923d45619c62a9f1b47fd52427896", null ],
-    [ "studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius", "ivesties__rezimai_8cpp.html#ada2587bb62dd96fb91efe941f0be5ec2", null ],
-    [ "visko_generavimas", "ivesties__rezimai_8cpp.html#a46e9ded2d6102437ec8189da3446bfe9", null ]
+    [ "pazymiu_generavimas", "ivesties__rezimai_8cpp.html#a3789ae82e8b6c077e0bd85d25b8b4fc0", null ],
+    [ "ranka", "ivesties__rezimai_8cpp.html#af3885b06efc0ca2a3dd9ab4531caf36b", null ],
+    [ "skaitymas_is_failo", "ivesties__rezimai_8cpp.html#a1810c2f9bbe868e2ca5d725a261e36b9", null ],
+    [ "strategija_1", "ivesties__rezimai_8cpp.html#adbe8d21129011d2afbefd4df2807eb39", null ],
+    [ "studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius", "ivesties__rezimai_8cpp.html#a9ec323e44148438e01c98561df78ce0f", null ],
+    [ "visko_generavimas", "ivesties__rezimai_8cpp.html#a76552992a9908513d0915223ad8a11f0", null ]
 ];

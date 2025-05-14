@@ -2,8 +2,9 @@
 #define ZMOGUS_H
 
 #include "headers_main.h"
+#include "export_def.h"
 
-class Zmogus {
+class DLL_EXPORT Zmogus {
 protected:
     string vardas;
     string pavarde;

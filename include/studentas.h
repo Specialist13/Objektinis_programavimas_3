@@ -5,7 +5,7 @@
 #include "skaiciavimo_funkcijos.h"
 #include "zmogus.h"
 
-class Stud : public Zmogus {
+class DLL_EXPORT Stud : public Zmogus {
 private:
     Vector<int> pazymiai;
     int egzaminas;

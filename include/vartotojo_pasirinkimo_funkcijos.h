@@ -3,8 +3,9 @@
 
 #include "headers_main.h"
 #include "studentas.h"
+#include "export_def.h"
 
-void rezimo_pasirinkimas (Vector<Stud> &studentai);
+DLL_EXPORT void rezimo_pasirinkimas (Vector<Stud> &studentai);
 void isvesties_pasirinkimas(Vector<Stud> &studentai);
 void failo_pasirinkimas(Vector<Stud> &studentai);
 

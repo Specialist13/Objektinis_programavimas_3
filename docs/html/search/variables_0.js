@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['egzaminas_0',['egzaminas',['../class_stud.html#a8db2a39b5038539018c6ffca51b606e5',1,'Stud']]]
+  ['capacity_0',['capacity',['../class_vector.html#ab65c9775787e3529e5cbafb44782cf37',1,'Vector']]]
 ];

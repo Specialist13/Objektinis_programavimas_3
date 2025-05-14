@@ -1,0 +1,396 @@
+\doxysection{Vector\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Klasė Šablonas}
+\hypertarget{class_vector}{}\label{class_vector}\index{Vector$<$ T $>$@{Vector$<$ T $>$}}
+
+
+{\ttfamily \#include $<$vector.\+h$>$}
+
+\doxysubsubsection*{Vieši Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_ac431b996297e2054dd99ec3afa2a710d}{Vector}} (size\+\_\+t init\+\_\+capacity=10)
+\item 
+\mbox{\hyperlink{class_vector_afd524fac19e6d3d69db5198ffe2952b0}{\texorpdfstring{$\sim$}{\string~}\+Vector}} ()
+\item 
+\mbox{\hyperlink{class_vector_a940f94b7c4a1c15a65a1ab6e13859dfe}{Vector}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector_a2fe37b54a47d28015829196cb5abec05}{operator=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+\mbox{\hyperlink{class_vector_a5ed9bb7852ccee071f8418d10182927f}{Vector}} (\mbox{\hyperlink{class_vector}{Vector}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector_ac7a5d1c7410208d7ce8f13497e31dd87}{operator=}} (\mbox{\hyperlink{class_vector}{Vector}} \&\&other) noexcept
+\item 
+void \mbox{\hyperlink{class_vector_ae8dfa135fec20c87550383b3ae20dff0}{assign}} (size\+\_\+t count, const T \&value)
+\item 
+void \mbox{\hyperlink{class_vector_a0a022117f286cad7058680d5f60e19a4}{assign}} (const T \texorpdfstring{$\ast$}{*}first, const T \texorpdfstring{$\ast$}{*}last)
+\item 
+void \mbox{\hyperlink{class_vector_a3a9fde23af55f8c878d1e536f58e3ce4}{assign}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+T \& \mbox{\hyperlink{class_vector_a7495aa482571ad81f957802387770123}{at}} (size\+\_\+t index)
+\item 
+T \& \mbox{\hyperlink{class_vector_a314b19cea6ad9ce76457e24ac8264bd8}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t index)
+\item 
+T \& \mbox{\hyperlink{class_vector_a0061cc9127a9cbf541439121998a1fdd}{front}} ()
+\item 
+T \& \mbox{\hyperlink{class_vector_a6decf0bdeb6849bfcc151b2c514f639f}{back}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_ad4ab3c154a8408f62e3b1d24fc140a80}{get\+Data}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_a48330adb902d17d3fbed6e83fd58976f}{begin}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_aa8958aac9b8931d471cdd99428c2d535}{end}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_a614448e9aca6f7d9e2c788e87ea142d7}{rbegin}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_a8c9f1f9612dff2d18dde206b6d2d31e4}{rend}} ()
+\item 
+bool \mbox{\hyperlink{class_vector_ad688a8a0dfbd07ea63d838058a436f79}{empty}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_vector_afb849f7ed7b5bc30b29679a0ace9f7c1}{get\+Size}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_vector_a442b72c70b33b62d49c99845385bba51}{max\+\_\+size}} () const
+\item 
+void \mbox{\hyperlink{class_vector_afa0c4c5f0f2d2d7940180fbed0f46bc4}{reserve}} (size\+\_\+t new\+\_\+capacity)
+\item 
+size\+\_\+t \mbox{\hyperlink{class_vector_ac249f0cd6a15ca3e4dd6cfa469d83245}{get\+Capacity}} () const
+\item 
+void \mbox{\hyperlink{class_vector_ad6454ce193263b8000d4c18cb0c3a0c8}{shrink\+\_\+to\+\_\+fit}} ()
+\item 
+void \mbox{\hyperlink{class_vector_a32ad98b135472b0ebc5d6cb3ae5d0085}{clear}} ()
+\item 
+void \mbox{\hyperlink{class_vector_a597069ade585b770e87a588ab8313b76}{insert}} (size\+\_\+t index, const T \&value)
+\item 
+void \mbox{\hyperlink{class_vector_a369204d03cbb5750440ec38d7caad3bb}{erase}} (size\+\_\+t index)
+\item 
+void \mbox{\hyperlink{class_vector_a4415960a83615855ec32f8169f641786}{push\+\_\+back}} (const T \&value)
+\item 
+{\footnotesize template$<$typename Range$>$ }\\void \mbox{\hyperlink{class_vector_a11e420bc69020ef522021bac1e78e392}{append\+\_\+range}} (const Range \&other)
+\item 
+void \mbox{\hyperlink{class_vector_adcba035109febbe55cba2a25f8483ba6}{pop\+\_\+back}} ()
+\item 
+void \mbox{\hyperlink{class_vector_ae904067f0717793273fa2b6fe8fc9eb8}{resize}} (size\+\_\+t new\+\_\+size)
+\item 
+void \mbox{\hyperlink{class_vector_a6b3ed4325e3451e917db94c574b13efc}{swap}} (\mbox{\hyperlink{class_vector}{Vector}} \&other)
+\item 
+bool \mbox{\hyperlink{class_vector_a1b2b4d9dc3df91e091a709322b76859a}{operator==}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_vector_aeb226de8807a211671abc6864858bf6b}{operator!=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_vector_abd4fc7036719f7a2d6603d314382b89d}{operator$<$}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_vector_aacfd8d2dffb899bc87935b062a5693b4}{operator$<$=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_vector_aba5a2729dbecd9873a9d4f7b2d0d2ce7}{operator$>$}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_vector_aa52b8c5b80c74523303491db09fb4636}{operator$>$=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Privatūs Atributai}
+\begin{DoxyCompactItemize}
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector_a536da87a916c8bdf2565fa6d808337f2}{data}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_vector_a0a2dd54f141e234e098918299bbcc27c}{size}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_vector_ab65c9775787e3529e5cbafb44782cf37}{capacity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\Hypertarget{class_vector_ac431b996297e2054dd99ec3afa2a710d}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_vector_ac431b996297e2054dd99ec3afa2a710d} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\mbox{\hyperlink{class_vector}{\+::\+Vector}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{init\+\_\+capacity}{ = {\ttfamily 10}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_afd524fac19e6d3d69db5198ffe2952b0}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!````~Vector@{\texorpdfstring{$\sim$}{\string~}Vector}}
+\index{````~Vector@{\texorpdfstring{$\sim$}{\string~}Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Vector()}{\string~Vector()}}
+{\footnotesize\ttfamily \label{class_vector_afd524fac19e6d3d69db5198ffe2952b0} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a940f94b7c4a1c15a65a1ab6e13859dfe}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_vector_a940f94b7c4a1c15a65a1ab6e13859dfe} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\mbox{\hyperlink{class_vector}{\+::\+Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a5ed9bb7852ccee071f8418d10182927f}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_vector_a5ed9bb7852ccee071f8418d10182927f} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\mbox{\hyperlink{class_vector}{\+::\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Metodų Dokumentacija}
+\Hypertarget{class_vector_a11e420bc69020ef522021bac1e78e392}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!append\_range@{append\_range}}
+\index{append\_range@{append\_range}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{append\_range()}{append\_range()}}
+{\footnotesize\ttfamily \label{class_vector_a11e420bc69020ef522021bac1e78e392} 
+template$<$typename T$>$ \\
+template$<$typename Range$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::append\+\_\+range (\begin{DoxyParamCaption}\item[{const Range \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a0a022117f286cad7058680d5f60e19a4}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!assign@{assign}}
+\index{assign@{assign}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_vector_a0a022117f286cad7058680d5f60e19a4} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::assign (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{first}{, }\item[{const T \texorpdfstring{$\ast$}{*}}]{last}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a3a9fde23af55f8c878d1e536f58e3ce4}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!assign@{assign}}
+\index{assign@{assign}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_vector_a3a9fde23af55f8c878d1e536f58e3ce4} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::assign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ae8dfa135fec20c87550383b3ae20dff0}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!assign@{assign}}
+\index{assign@{assign}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_vector_ae8dfa135fec20c87550383b3ae20dff0} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::assign (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count}{, }\item[{const T \&}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a7495aa482571ad81f957802387770123}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!at@{at}}
+\index{at@{at}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \label{class_vector_a7495aa482571ad81f957802387770123} 
+template$<$typename T$>$ \\
+T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a6decf0bdeb6849bfcc151b2c514f639f}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!back@{back}}
+\index{back@{back}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \label{class_vector_a6decf0bdeb6849bfcc151b2c514f639f} 
+template$<$typename T$>$ \\
+T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a48330adb902d17d3fbed6e83fd58976f}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_vector_a48330adb902d17d3fbed6e83fd58976f} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a32ad98b135472b0ebc5d6cb3ae5d0085}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_vector_a32ad98b135472b0ebc5d6cb3ae5d0085} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ad688a8a0dfbd07ea63d838058a436f79}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_vector_ad688a8a0dfbd07ea63d838058a436f79} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_aa8958aac9b8931d471cdd99428c2d535}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!end@{end}}
+\index{end@{end}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{class_vector_aa8958aac9b8931d471cdd99428c2d535} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a369204d03cbb5750440ec38d7caad3bb}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily \label{class_vector_a369204d03cbb5750440ec38d7caad3bb} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a0061cc9127a9cbf541439121998a1fdd}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!front@{front}}
+\index{front@{front}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily \label{class_vector_a0061cc9127a9cbf541439121998a1fdd} 
+template$<$typename T$>$ \\
+T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ac249f0cd6a15ca3e4dd6cfa469d83245}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily \label{class_vector_ac249f0cd6a15ca3e4dd6cfa469d83245} 
+template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::get\+Capacity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_ad4ab3c154a8408f62e3b1d24fc140a80}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!getData@{getData}}
+\index{getData@{getData}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_vector_ad4ab3c154a8408f62e3b1d24fc140a80} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_afb849f7ed7b5bc30b29679a0ace9f7c1}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_vector_afb849f7ed7b5bc30b29679a0ace9f7c1} 
+template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_a597069ade585b770e87a588ab8313b76}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{class_vector_a597069ade585b770e87a588ab8313b76} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{, }\item[{const T \&}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a442b72c70b33b62d49c99845385bba51}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily \label{class_vector_a442b72c70b33b62d49c99845385bba51} 
+template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_aeb226de8807a211671abc6864858bf6b}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_vector_aeb226de8807a211671abc6864858bf6b} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_abd4fc7036719f7a2d6603d314382b89d}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_vector_abd4fc7036719f7a2d6603d314382b89d} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_aacfd8d2dffb899bc87935b062a5693b4}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{class_vector_aacfd8d2dffb899bc87935b062a5693b4} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_a2fe37b54a47d28015829196cb5abec05}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_vector_a2fe37b54a47d28015829196cb5abec05} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ac7a5d1c7410208d7ce8f13497e31dd87}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_vector_ac7a5d1c7410208d7ce8f13497e31dd87} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_vector_a1b2b4d9dc3df91e091a709322b76859a}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_vector_a1b2b4d9dc3df91e091a709322b76859a} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_aba5a2729dbecd9873a9d4f7b2d0d2ce7}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{class_vector_aba5a2729dbecd9873a9d4f7b2d0d2ce7} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_aa52b8c5b80c74523303491db09fb4636}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{class_vector_aa52b8c5b80c74523303491db09fb4636} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_vector_a314b19cea6ad9ce76457e24ac8264bd8}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_vector_a314b19cea6ad9ce76457e24ac8264bd8} 
+template$<$typename T$>$ \\
+T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_adcba035109febbe55cba2a25f8483ba6}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily \label{class_vector_adcba035109febbe55cba2a25f8483ba6} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a4415960a83615855ec32f8169f641786}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily \label{class_vector_a4415960a83615855ec32f8169f641786} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a614448e9aca6f7d9e2c788e87ea142d7}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}}
+{\footnotesize\ttfamily \label{class_vector_a614448e9aca6f7d9e2c788e87ea142d7} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a8c9f1f9612dff2d18dde206b6d2d31e4}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}}
+{\footnotesize\ttfamily \label{class_vector_a8c9f1f9612dff2d18dde206b6d2d31e4} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_afa0c4c5f0f2d2d7940180fbed0f46bc4}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!reserve@{reserve}}
+\index{reserve@{reserve}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily \label{class_vector_afa0c4c5f0f2d2d7940180fbed0f46bc4} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::reserve (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{new\+\_\+capacity}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ae904067f0717793273fa2b6fe8fc9eb8}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{class_vector_ae904067f0717793273fa2b6fe8fc9eb8} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_ad6454ce193263b8000d4c18cb0c3a0c8}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!shrink\_to\_fit@{shrink\_to\_fit}}
+\index{shrink\_to\_fit@{shrink\_to\_fit}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{shrink\_to\_fit()}{shrink\_to\_fit()}}
+{\footnotesize\ttfamily \label{class_vector_ad6454ce193263b8000d4c18cb0c3a0c8} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::shrink\+\_\+to\+\_\+fit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_vector_a6b3ed4325e3451e917db94c574b13efc}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily \label{class_vector_a6b3ed4325e3451e917db94c574b13efc} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Lauko aprašymas}
+\Hypertarget{class_vector_ab65c9775787e3529e5cbafb44782cf37}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily \label{class_vector_ab65c9775787e3529e5cbafb44782cf37} 
+template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_vector_a536da87a916c8bdf2565fa6d808337f2}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!data@{data}}
+\index{data@{data}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{class_vector_a536da87a916c8bdf2565fa6d808337f2} 
+template$<$typename T$>$ \\
+T\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_vector_a0a2dd54f141e234e098918299bbcc27c}\index{Vector$<$ T $>$@{Vector$<$ T $>$}!size@{size}}
+\index{size@{size}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_vector_a0a2dd54f141e234e098918299bbcc27c} 
+template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacija šiai klasei sugeneruota iš šio failo\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{vector_8h}{vector.\+h}}\end{DoxyCompactItemize}

@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['setpavarde_0',['setPavarde',['../class_zmogus.html#ac34eb9eb78f1c75080df7230ca61f2d2',1,'Zmogus']]],
-  ['setvardas_1',['setVardas',['../class_zmogus.html#a2158d2752cd52e970ac4c809446e9d8b',1,'Zmogus']]],
-  ['skaiciavimo_5ffunkcijos_2ecpp_2',['skaiciavimo_funkcijos.cpp',['../skaiciavimo__funkcijos_8cpp.html',1,'']]],
-  ['skaiciavimo_5ffunkcijos_2eh_3',['skaiciavimo_funkcijos.h',['../skaiciavimo__funkcijos_8h.html',1,'']]],
-  ['skaiciuotigalutini_4',['skaiciuotiGalutini',['../class_stud.html#a69ce6be81c2c6ae2f51efec624db8c94',1,'Stud']]],
-  ['skaitymas_5fis_5ffailo_5',['skaitymas_is_failo',['../ivesties__rezimai_8h.html#a42cbadd48cb69fe022fc67e188524d0b',1,'skaitymas_is_failo(vector&lt; Stud &gt; &amp;studentai, string failas, bool testavimas):&#160;ivesties_rezimai.cpp'],['../ivesties__rezimai_8cpp.html#a42cbadd48cb69fe022fc67e188524d0b',1,'skaitymas_is_failo(vector&lt; Stud &gt; &amp;studentai, string failas, bool testavimas):&#160;ivesties_rezimai.cpp']]],
-  ['strategija_5f1_6',['strategija_1',['../ivesties__rezimai_8h.html#acee923d45619c62a9f1b47fd52427896',1,'strategija_1(vector&lt; Stud &gt; &amp;studentai, vector&lt; Stud &gt; &amp;vargsiukai, vector&lt; Stud &gt; &amp;galvociai):&#160;ivesties_rezimai.cpp'],['../ivesties__rezimai_8cpp.html#acee923d45619c62a9f1b47fd52427896',1,'strategija_1(vector&lt; Stud &gt; &amp;studentai, vector&lt; Stud &gt; &amp;vargsiukai, vector&lt; Stud &gt; &amp;galvociai):&#160;ivesties_rezimai.cpp']]],
-  ['stud_7',['Stud',['../class_stud.html',1,'Stud'],['../class_stud.html#a97585839898d45dc9fc815d5b36e2b69',1,'Stud::Stud()'],['../class_stud.html#a3653b53817682ff56154eb076c246d1c',1,'Stud::Stud(std::istream &amp;is, string rezimas)'],['../class_stud.html#a7115844e12dadad25b9ff2de597f9eac',1,'Stud::Stud(const Stud &amp;s)'],['../class_stud.html#a0dc47589ff92661e3bb7ea2070a4fd7d',1,'Stud::Stud(Stud &amp;&amp;s) noexcept']]],
-  ['studentas_2ecpp_8',['studentas.cpp',['../studentas_8cpp.html',1,'']]],
-  ['studentas_2eh_9',['studentas.h',['../studentas_8h.html',1,'']]],
-  ['studentas_5ftestai_2ecpp_10',['studentas_testai.cpp',['../studentas__testai_8cpp.html',1,'']]],
-  ['studentas_5ftestai_2eh_11',['studentas_testai.h',['../studentas__testai_8h.html',1,'']]],
-  ['studentu_5fskaitymas_5fir_5fskirstymas_5fi_5fvargsiukus_5fir_5fgalvocius_12',['studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius',['../ivesties__rezimai_8h.html#ada2587bb62dd96fb91efe941f0be5ec2',1,'studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius(vector&lt; Stud &gt; &amp;studentai, string failas, std::chrono::duration&lt; double &gt; &amp;ivesties_suma, std::chrono::duration&lt; double &gt; &amp;rusiavimo_suma, std::chrono::duration&lt; double &gt; &amp;skirstymo_suma, int strategija):&#160;ivesties_rezimai.cpp'],['../ivesties__rezimai_8cpp.html#ada2587bb62dd96fb91efe941f0be5ec2',1,'studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius(vector&lt; Stud &gt; &amp;studentai, string failas, std::chrono::duration&lt; double &gt; &amp;ivesties_suma, std::chrono::duration&lt; double &gt; &amp;rusiavimo_suma, std::chrono::duration&lt; double &gt; &amp;skirstymo_suma, int strategija):&#160;ivesties_rezimai.cpp']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['max_5fsize_2',['max_size',['../class_vector.html#a442b72c70b33b62d49c99845385bba51',1,'Vector']]],
+  ['mediana_3',['mediana',['../skaiciavimo__funkcijos_8h.html#a08a6ad2863b62d9b5d808d588f8fbec1',1,'mediana(Vector&lt; int &gt; &amp;pazymiai, int &amp;egzaminas):&#160;skaiciavimo_funkcijos.cpp'],['../skaiciavimo__funkcijos_8cpp.html#a08a6ad2863b62d9b5d808d588f8fbec1',1,'mediana(Vector&lt; int &gt; &amp;pazymiai, int &amp;egzaminas):&#160;skaiciavimo_funkcijos.cpp']]]
 ];

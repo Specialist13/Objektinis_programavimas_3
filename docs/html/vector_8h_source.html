@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Darbo su studentų duomenimis programa: include/vector.h išeities tekstas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Darbo su studentų duomenimis programa
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Paieška" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('vector_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">vector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vector_8h.html">Eiti į šio failo dokumentaciją.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VECTOR_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VECTOR_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_vector.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_vector.html#a536da87a916c8bdf2565fa6d808337f2">   11</a></span>    T* <a class="code hl_variable" href="class_vector.html#a536da87a916c8bdf2565fa6d808337f2">data</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_vector.html#a0a2dd54f141e234e098918299bbcc27c">   12</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="class_vector.html#a0a2dd54f141e234e098918299bbcc27c">size</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_vector.html#ab65c9775787e3529e5cbafb44782cf37">   13</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="class_vector.html#ab65c9775787e3529e5cbafb44782cf37">capacity</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">   15</a></span>    <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>(<span class="keywordtype">size_t</span> init_capacity=10);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_vector.html#afd524fac19e6d3d69db5198ffe2952b0">   16</a></span>    <a class="code hl_function" href="class_vector.html#afd524fac19e6d3d69db5198ffe2952b0">~Vector</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_vector.html#a940f94b7c4a1c15a65a1ab6e13859dfe">   17</a></span>    <a class="code hl_function" href="class_vector.html#a940f94b7c4a1c15a65a1ab6e13859dfe">Vector</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_vector.html#a2fe37b54a47d28015829196cb5abec05">   18</a></span>    <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a2fe37b54a47d28015829196cb5abec05">operator= </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_vector.html#a5ed9bb7852ccee071f8418d10182927f">   19</a></span>    <a class="code hl_function" href="class_vector.html#a5ed9bb7852ccee071f8418d10182927f">Vector</a>(<a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp;&amp; other) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_vector.html#ac7a5d1c7410208d7ce8f13497e31dd87">   20</a></span>    <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a2fe37b54a47d28015829196cb5abec05">operator= </a>(<a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp;&amp; other) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_vector.html#ae8dfa135fec20c87550383b3ae20dff0">   21</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#ae8dfa135fec20c87550383b3ae20dff0">assign</a>(<span class="keywordtype">size_t</span> count, <span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_vector.html#a0a022117f286cad7058680d5f60e19a4">   22</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a0a022117f286cad7058680d5f60e19a4">assign</a>(<span class="keyword">const</span> T* first, <span class="keyword">const</span> T* last);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_vector.html#a3a9fde23af55f8c878d1e536f58e3ce4">   23</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a3a9fde23af55f8c878d1e536f58e3ce4">assign</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_vector.html#a7495aa482571ad81f957802387770123">   24</a></span>    T&amp; <a class="code hl_function" href="class_vector.html#a7495aa482571ad81f957802387770123">at</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_vector.html#a314b19cea6ad9ce76457e24ac8264bd8">   25</a></span>    T&amp; <a class="code hl_function" href="class_vector.html#a314b19cea6ad9ce76457e24ac8264bd8">operator[]</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_vector.html#a0061cc9127a9cbf541439121998a1fdd">   26</a></span>    T&amp; <a class="code hl_function" href="class_vector.html#a0061cc9127a9cbf541439121998a1fdd">front</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_vector.html#a6decf0bdeb6849bfcc151b2c514f639f">   27</a></span>    T&amp; <a class="code hl_function" href="class_vector.html#a6decf0bdeb6849bfcc151b2c514f639f">back</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_vector.html#ad4ab3c154a8408f62e3b1d24fc140a80">   28</a></span>    T* <a class="code hl_function" href="class_vector.html#ad4ab3c154a8408f62e3b1d24fc140a80">getData</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_vector.html#a48330adb902d17d3fbed6e83fd58976f">   29</a></span>    T* <a class="code hl_function" href="class_vector.html#a48330adb902d17d3fbed6e83fd58976f">begin</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_vector.html#aa8958aac9b8931d471cdd99428c2d535">   30</a></span>    T* <a class="code hl_function" href="class_vector.html#aa8958aac9b8931d471cdd99428c2d535">end</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_vector.html#a614448e9aca6f7d9e2c788e87ea142d7">   31</a></span>    T* <a class="code hl_function" href="class_vector.html#a614448e9aca6f7d9e2c788e87ea142d7">rbegin</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_vector.html#a8c9f1f9612dff2d18dde206b6d2d31e4">   32</a></span>    T* <a class="code hl_function" href="class_vector.html#a8c9f1f9612dff2d18dde206b6d2d31e4">rend</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_vector.html#ad688a8a0dfbd07ea63d838058a436f79">   33</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#ad688a8a0dfbd07ea63d838058a436f79">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_vector.html#afb849f7ed7b5bc30b29679a0ace9f7c1">   34</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_vector.html#afb849f7ed7b5bc30b29679a0ace9f7c1">getSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_vector.html#a442b72c70b33b62d49c99845385bba51">   35</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_vector.html#a442b72c70b33b62d49c99845385bba51">max_size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_vector.html#afa0c4c5f0f2d2d7940180fbed0f46bc4">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#afa0c4c5f0f2d2d7940180fbed0f46bc4">reserve</a>(<span class="keywordtype">size_t</span> new_capacity);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_vector.html#ac249f0cd6a15ca3e4dd6cfa469d83245">   37</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_vector.html#ac249f0cd6a15ca3e4dd6cfa469d83245">getCapacity</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_vector.html#ad6454ce193263b8000d4c18cb0c3a0c8">   38</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#ad6454ce193263b8000d4c18cb0c3a0c8">shrink_to_fit</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_vector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">   39</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">clear</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_vector.html#a597069ade585b770e87a588ab8313b76">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a597069ade585b770e87a588ab8313b76">insert</a>(<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_vector.html#a369204d03cbb5750440ec38d7caad3bb">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a369204d03cbb5750440ec38d7caad3bb">erase</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_vector.html#a4415960a83615855ec32f8169f641786">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a4415960a83615855ec32f8169f641786">push_back</a>(<span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_vector.html#a11e420bc69020ef522021bac1e78e392">   44</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a11e420bc69020ef522021bac1e78e392">append_range</a>(<span class="keyword">const</span> Range&amp; other);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_vector.html#adcba035109febbe55cba2a25f8483ba6">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#adcba035109febbe55cba2a25f8483ba6">pop_back</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_vector.html#ae904067f0717793273fa2b6fe8fc9eb8">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#ae904067f0717793273fa2b6fe8fc9eb8">resize</a>(<span class="keywordtype">size_t</span> new_size);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_vector.html#a6b3ed4325e3451e917db94c574b13efc">   47</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a6b3ed4325e3451e917db94c574b13efc">swap</a>(<a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_vector.html#a1b2b4d9dc3df91e091a709322b76859a">   48</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a1b2b4d9dc3df91e091a709322b76859a">operator== </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_vector.html#aeb226de8807a211671abc6864858bf6b">   49</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#aeb226de8807a211671abc6864858bf6b">operator!= </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_vector.html#abd4fc7036719f7a2d6603d314382b89d">   50</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#abd4fc7036719f7a2d6603d314382b89d">operator&lt; </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_vector.html#aacfd8d2dffb899bc87935b062a5693b4">   51</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#aacfd8d2dffb899bc87935b062a5693b4">operator&lt;= </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_vector.html#aba5a2729dbecd9873a9d4f7b2d0d2ce7">   52</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#aba5a2729dbecd9873a9d4f7b2d0d2ce7">operator&gt; </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_vector.html#aa52b8c5b80c74523303491db09fb4636">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#aa52b8c5b80c74523303491db09fb4636">operator&gt;= </a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#include &quot;../source/vector.tpp&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_vector_html_a0061cc9127a9cbf541439121998a1fdd"><div class="ttname"><a href="class_vector.html#a0061cc9127a9cbf541439121998a1fdd">Vector::front</a></div><div class="ttdeci">T &amp; front()</div></div>
+<div class="ttc" id="aclass_vector_html_a0a022117f286cad7058680d5f60e19a4"><div class="ttname"><a href="class_vector.html#a0a022117f286cad7058680d5f60e19a4">Vector::assign</a></div><div class="ttdeci">void assign(const T *first, const T *last)</div></div>
+<div class="ttc" id="aclass_vector_html_a0a2dd54f141e234e098918299bbcc27c"><div class="ttname"><a href="class_vector.html#a0a2dd54f141e234e098918299bbcc27c">Vector::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition</b> vector.h:12</div></div>
+<div class="ttc" id="aclass_vector_html_a11e420bc69020ef522021bac1e78e392"><div class="ttname"><a href="class_vector.html#a11e420bc69020ef522021bac1e78e392">Vector::append_range</a></div><div class="ttdeci">void append_range(const Range &amp;other)</div></div>
+<div class="ttc" id="aclass_vector_html_a1b2b4d9dc3df91e091a709322b76859a"><div class="ttname"><a href="class_vector.html#a1b2b4d9dc3df91e091a709322b76859a">Vector::operator==</a></div><div class="ttdeci">bool operator==(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_a2fe37b54a47d28015829196cb5abec05"><div class="ttname"><a href="class_vector.html#a2fe37b54a47d28015829196cb5abec05">Vector::operator=</a></div><div class="ttdeci">Vector &amp; operator=(const Vector &amp;other)</div></div>
+<div class="ttc" id="aclass_vector_html_a314b19cea6ad9ce76457e24ac8264bd8"><div class="ttname"><a href="class_vector.html#a314b19cea6ad9ce76457e24ac8264bd8">Vector::operator[]</a></div><div class="ttdeci">T &amp; operator[](size_t index)</div></div>
+<div class="ttc" id="aclass_vector_html_a32ad98b135472b0ebc5d6cb3ae5d0085"><div class="ttname"><a href="class_vector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">Vector::clear</a></div><div class="ttdeci">void clear()</div></div>
+<div class="ttc" id="aclass_vector_html_a369204d03cbb5750440ec38d7caad3bb"><div class="ttname"><a href="class_vector.html#a369204d03cbb5750440ec38d7caad3bb">Vector::erase</a></div><div class="ttdeci">void erase(size_t index)</div></div>
+<div class="ttc" id="aclass_vector_html_a3a9fde23af55f8c878d1e536f58e3ce4"><div class="ttname"><a href="class_vector.html#a3a9fde23af55f8c878d1e536f58e3ce4">Vector::assign</a></div><div class="ttdeci">void assign(const Vector &amp;other)</div></div>
+<div class="ttc" id="aclass_vector_html_a4415960a83615855ec32f8169f641786"><div class="ttname"><a href="class_vector.html#a4415960a83615855ec32f8169f641786">Vector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div></div>
+<div class="ttc" id="aclass_vector_html_a442b72c70b33b62d49c99845385bba51"><div class="ttname"><a href="class_vector.html#a442b72c70b33b62d49c99845385bba51">Vector::max_size</a></div><div class="ttdeci">size_t max_size() const</div></div>
+<div class="ttc" id="aclass_vector_html_a48330adb902d17d3fbed6e83fd58976f"><div class="ttname"><a href="class_vector.html#a48330adb902d17d3fbed6e83fd58976f">Vector::begin</a></div><div class="ttdeci">T * begin()</div></div>
+<div class="ttc" id="aclass_vector_html_a536da87a916c8bdf2565fa6d808337f2"><div class="ttname"><a href="class_vector.html#a536da87a916c8bdf2565fa6d808337f2">Vector::data</a></div><div class="ttdeci">T * data</div><div class="ttdef"><b>Definition</b> vector.h:11</div></div>
+<div class="ttc" id="aclass_vector_html_a597069ade585b770e87a588ab8313b76"><div class="ttname"><a href="class_vector.html#a597069ade585b770e87a588ab8313b76">Vector::insert</a></div><div class="ttdeci">void insert(size_t index, const T &amp;value)</div></div>
+<div class="ttc" id="aclass_vector_html_a5ed9bb7852ccee071f8418d10182927f"><div class="ttname"><a href="class_vector.html#a5ed9bb7852ccee071f8418d10182927f">Vector::Vector</a></div><div class="ttdeci">Vector(Vector &amp;&amp;other) noexcept</div></div>
+<div class="ttc" id="aclass_vector_html_a614448e9aca6f7d9e2c788e87ea142d7"><div class="ttname"><a href="class_vector.html#a614448e9aca6f7d9e2c788e87ea142d7">Vector::rbegin</a></div><div class="ttdeci">T * rbegin()</div></div>
+<div class="ttc" id="aclass_vector_html_a6b3ed4325e3451e917db94c574b13efc"><div class="ttname"><a href="class_vector.html#a6b3ed4325e3451e917db94c574b13efc">Vector::swap</a></div><div class="ttdeci">void swap(Vector &amp;other)</div></div>
+<div class="ttc" id="aclass_vector_html_a6decf0bdeb6849bfcc151b2c514f639f"><div class="ttname"><a href="class_vector.html#a6decf0bdeb6849bfcc151b2c514f639f">Vector::back</a></div><div class="ttdeci">T &amp; back()</div></div>
+<div class="ttc" id="aclass_vector_html_a7495aa482571ad81f957802387770123"><div class="ttname"><a href="class_vector.html#a7495aa482571ad81f957802387770123">Vector::at</a></div><div class="ttdeci">T &amp; at(size_t index)</div></div>
+<div class="ttc" id="aclass_vector_html_a8c9f1f9612dff2d18dde206b6d2d31e4"><div class="ttname"><a href="class_vector.html#a8c9f1f9612dff2d18dde206b6d2d31e4">Vector::rend</a></div><div class="ttdeci">T * rend()</div></div>
+<div class="ttc" id="aclass_vector_html_a940f94b7c4a1c15a65a1ab6e13859dfe"><div class="ttname"><a href="class_vector.html#a940f94b7c4a1c15a65a1ab6e13859dfe">Vector::Vector</a></div><div class="ttdeci">Vector(const Vector &amp;other)</div></div>
+<div class="ttc" id="aclass_vector_html_aa52b8c5b80c74523303491db09fb4636"><div class="ttname"><a href="class_vector.html#aa52b8c5b80c74523303491db09fb4636">Vector::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_aa8958aac9b8931d471cdd99428c2d535"><div class="ttname"><a href="class_vector.html#aa8958aac9b8931d471cdd99428c2d535">Vector::end</a></div><div class="ttdeci">T * end()</div></div>
+<div class="ttc" id="aclass_vector_html_aacfd8d2dffb899bc87935b062a5693b4"><div class="ttname"><a href="class_vector.html#aacfd8d2dffb899bc87935b062a5693b4">Vector::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_ab65c9775787e3529e5cbafb44782cf37"><div class="ttname"><a href="class_vector.html#ab65c9775787e3529e5cbafb44782cf37">Vector::capacity</a></div><div class="ttdeci">size_t capacity</div><div class="ttdef"><b>Definition</b> vector.h:13</div></div>
+<div class="ttc" id="aclass_vector_html_aba5a2729dbecd9873a9d4f7b2d0d2ce7"><div class="ttname"><a href="class_vector.html#aba5a2729dbecd9873a9d4f7b2d0d2ce7">Vector::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_abd4fc7036719f7a2d6603d314382b89d"><div class="ttname"><a href="class_vector.html#abd4fc7036719f7a2d6603d314382b89d">Vector::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_ac249f0cd6a15ca3e4dd6cfa469d83245"><div class="ttname"><a href="class_vector.html#ac249f0cd6a15ca3e4dd6cfa469d83245">Vector::getCapacity</a></div><div class="ttdeci">size_t getCapacity() const</div></div>
+<div class="ttc" id="aclass_vector_html_ac431b996297e2054dd99ec3afa2a710d"><div class="ttname"><a href="class_vector.html#ac431b996297e2054dd99ec3afa2a710d">Vector::Vector</a></div><div class="ttdeci">Vector(size_t init_capacity=10)</div></div>
+<div class="ttc" id="aclass_vector_html_ad4ab3c154a8408f62e3b1d24fc140a80"><div class="ttname"><a href="class_vector.html#ad4ab3c154a8408f62e3b1d24fc140a80">Vector::getData</a></div><div class="ttdeci">T * getData()</div></div>
+<div class="ttc" id="aclass_vector_html_ad6454ce193263b8000d4c18cb0c3a0c8"><div class="ttname"><a href="class_vector.html#ad6454ce193263b8000d4c18cb0c3a0c8">Vector::shrink_to_fit</a></div><div class="ttdeci">void shrink_to_fit()</div></div>
+<div class="ttc" id="aclass_vector_html_ad688a8a0dfbd07ea63d838058a436f79"><div class="ttname"><a href="class_vector.html#ad688a8a0dfbd07ea63d838058a436f79">Vector::empty</a></div><div class="ttdeci">bool empty() const</div></div>
+<div class="ttc" id="aclass_vector_html_adcba035109febbe55cba2a25f8483ba6"><div class="ttname"><a href="class_vector.html#adcba035109febbe55cba2a25f8483ba6">Vector::pop_back</a></div><div class="ttdeci">void pop_back()</div></div>
+<div class="ttc" id="aclass_vector_html_ae8dfa135fec20c87550383b3ae20dff0"><div class="ttname"><a href="class_vector.html#ae8dfa135fec20c87550383b3ae20dff0">Vector::assign</a></div><div class="ttdeci">void assign(size_t count, const T &amp;value)</div></div>
+<div class="ttc" id="aclass_vector_html_ae904067f0717793273fa2b6fe8fc9eb8"><div class="ttname"><a href="class_vector.html#ae904067f0717793273fa2b6fe8fc9eb8">Vector::resize</a></div><div class="ttdeci">void resize(size_t new_size)</div></div>
+<div class="ttc" id="aclass_vector_html_aeb226de8807a211671abc6864858bf6b"><div class="ttname"><a href="class_vector.html#aeb226de8807a211671abc6864858bf6b">Vector::operator!=</a></div><div class="ttdeci">bool operator!=(const Vector &amp;other) const</div></div>
+<div class="ttc" id="aclass_vector_html_afa0c4c5f0f2d2d7940180fbed0f46bc4"><div class="ttname"><a href="class_vector.html#afa0c4c5f0f2d2d7940180fbed0f46bc4">Vector::reserve</a></div><div class="ttdeci">void reserve(size_t new_capacity)</div></div>
+<div class="ttc" id="aclass_vector_html_afb849f7ed7b5bc30b29679a0ace9f7c1"><div class="ttname"><a href="class_vector.html#afb849f7ed7b5bc30b29679a0ace9f7c1">Vector::getSize</a></div><div class="ttdeci">size_t getSize() const</div></div>
+<div class="ttc" id="aclass_vector_html_afd524fac19e6d3d69db5198ffe2952b0"><div class="ttname"><a href="class_vector.html#afd524fac19e6d3d69db5198ffe2952b0">Vector::~Vector</a></div><div class="ttdeci">~Vector()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="vector_8h.html">vector.h</a></li>
+    <li class="footer">Sugeneruota <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

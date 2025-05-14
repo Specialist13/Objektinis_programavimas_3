@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['egzaminas_0',['egzaminas',['../class_stud.html#a8db2a39b5038539018c6ffca51b606e5',1,'Stud']]]
+  ['back_0',['back',['../class_vector.html#a6decf0bdeb6849bfcc151b2c514f639f',1,'Vector']]],
+  ['begin_1',['begin',['../class_vector.html#a48330adb902d17d3fbed6e83fd58976f',1,'Vector']]]
 ];

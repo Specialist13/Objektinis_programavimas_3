@@ -1,6 +1,6 @@
 var vartotojo__pasirinkimo__funkcijos_8cpp =
 [
-    [ "failo_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#a337b95a3bc8f74b5527674d9aa057bd0", null ],
-    [ "isvesties_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#ada3eb0d357206ff5196b2926d5da947d", null ],
-    [ "rezimo_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#a0209a8b92f982510330feedcb6f55efa", null ]
+    [ "failo_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#a4a231fa052eeff0c49417ac279c0a316", null ],
+    [ "isvesties_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#a1196f599b920050859a8a2c93dbcc789", null ],
+    [ "rezimo_pasirinkimas", "vartotojo__pasirinkimo__funkcijos_8cpp.html#ad2b3916930fa64a2edc88bbc1955eb9f", null ]
 ];

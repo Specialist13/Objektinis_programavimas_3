@@ -4,9 +4,10 @@
 #include <iostream>
 #include <stdexcept>
 #include <limits>
+#include "export_def.h"
 
 template <typename T>
-class Vector {
+class DLL_EXPORT Vector {
 private:
     T* data;
     size_t size;
