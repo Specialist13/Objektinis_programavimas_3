@@ -9,5 +9,6 @@ void testavimas(vector<Stud> &studentai);
 void failo_kurimo_testavimas ();
 void duomenu_apdorojimo_testavimas();
 void konteinerio_testavimas();
+void perskirstymu_testas();
 
 #endif
