@@ -1,4 +1,4 @@
-#include "vector.h"
+#include "../include/vector.h"
 
 template <typename T>
 Vector<T>::Vector(size_t init_capacity) : size(0), capacity(init_capacity) {
