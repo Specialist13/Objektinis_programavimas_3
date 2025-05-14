@@ -32,6 +32,13 @@ Galite ranka vesti studento vardą, pavardę ir tiek pažymių, kiek norite, tik
 
 Išvedamas studento vardas, pavardė ir galutiniai pažymiai pagal vidurkį bei medianą kiekvienam duomeniui suteikiant po 25 laukelius ir rikiuojant kairėje.
 
+# :chart: V3.0 Testavimas
+
+| Konteineris | Greitis 10000 | Greitis 100000 | Greitis 1000000 | Greitis 10000000 | Greitis 100000000 |
+| ----------- | ------------- | -------------- | --------------- | ---------------- | ----------------- |
+| std::vector | 0 s | 0.0010051 s | 0.0040315 s | 0.0425115 s | 0.389473 s |
+| Vector | 0 s | 0.0005066 s | 0.0030259 s | 0.0273958 s | 0.353859 s |
+
 # :chart: V1.1 Testavimas
 
 | Optimizavimo flag | Greitis 100000 (struct) | Greitis 1000000 (struct) | Failo dydis | Greitis 100000 (class) | Greitis 1000000 (class) | Failo dydis |
