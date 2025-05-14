@@ -6,7 +6,7 @@
 #include "../include/testavimo_funkcijos.h"
 #include "../include/studentas_testai.h"
 
-void rezimo_pasirinkimas (vector<Stud> &studentai){
+void rezimo_pasirinkimas (Vector<Stud> &studentai){
     int rezimas=0;
     Stud laikinas;
     string tekstas;
@@ -60,7 +60,7 @@ void rezimo_pasirinkimas (vector<Stud> &studentai){
     }
 }
 
-void isvesties_pasirinkimas(vector<Stud> &studentai){
+void isvesties_pasirinkimas(Vector<Stud> &studentai){
     rikiavimas(studentai);
     string tekstas="1 - Isvesti rezultatus i konsole\n2 - Isvesti rezultatus i faila\nPasirinkite isvedimo buda: ";
     int pasirinkimas;
@@ -85,7 +85,7 @@ void isvesties_pasirinkimas(vector<Stud> &studentai){
     }
 }
 
-void failo_pasirinkimas(vector<Stud> &studentai){
+void failo_pasirinkimas(Vector<Stud> &studentai){
     string failai[] = {"kursiokai.txt", "studentai10000.txt", "studentai100000.txt", "studentai1000000.txt"};
     string tekstas="1 - kursiokai.txt\n2 - studentai10000.txt\n3 - studentai100000.txt\n4 - studentai1000000.txt\nPasirinkite faila: ";
     int pasirinkimas;

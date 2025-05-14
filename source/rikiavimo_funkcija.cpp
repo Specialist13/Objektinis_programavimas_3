@@ -14,7 +14,7 @@ bool raktas_gm(Stud a, Stud b){
     return a.getGalutinisMed()<b.getGalutinisMed();
 }
 
-void rikiavimas (vector<Stud> &studentai){
+void rikiavimas (Vector<Stud> &studentai){
     string tekstas="1 - Rikiuoti pagal varda\n2 - Rikiuoti pagal pavarde\n3 - Rikiuoti pagal galutini pazymi is vidurkio\n4 - Rikiuoti pagal galutini pazymi is medianos\n5 - Nerikiuoti\nPasirinkite rikiavimo buda: ";
     int pasirinkimas;
     ivesties_tikrinimas(pasirinkimas,tekstas);

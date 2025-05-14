@@ -4,7 +4,7 @@
 #include "headers_main.h"
 #include "studentas.h"
 
-double vidurkis(vector<int> &pazymiai, int &egzaminas);
-double mediana(vector<int> &pazymiai, int &egzaminas);
+double vidurkis(Vector<int> &pazymiai, int &egzaminas);
+double mediana(Vector<int> &pazymiai, int &egzaminas);
 
 #endif

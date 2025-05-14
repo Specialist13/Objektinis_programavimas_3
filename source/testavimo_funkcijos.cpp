@@ -3,7 +3,7 @@
 #include "../include/skaiciavimo_funkcijos.h"
 #include "../include/ivesties_rezimai.h"
 
-void testinis_skaitymas_is_failo (vector<Stud> &studentai, string failas){
+void testinis_skaitymas_is_failo (Vector<Stud> &studentai, string failas){
     std::chrono::duration<double> laiku_suma{0};
     for (int i=0; i<5; i++){
         std::ifstream fd(failas);
@@ -28,7 +28,7 @@ void testinis_skaitymas_is_failo (vector<Stud> &studentai, string failas){
     cout<<"Skaitymo is failo laikas: "<<laiku_suma.count()/5<<" s\n";
 }
 
-void testavimas(vector<Stud> &studentai){
+void testavimas(Vector<Stud> &studentai){
     string failai[] = {"kursiokai.txt", "studentai10000.txt", "studentai100000.txt", "studentai1000000.txt"};
     string tekstas="1 - kursiokai.txt\n2 - studentai10000.txt\n3 - studentai100000.txt\n4 - studentai1000000.txt\nPasirinkite faila testavimui: ";
     int pasirinkimas;
@@ -113,7 +113,7 @@ void duomenu_apdorojimo_testavimas (){
         try {
             for (int i=0; i<5; i++){
                 Stud laikinas;
-                vector<Stud> studentai;
+                Vector<Stud> studentai;
                 studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius(studentai, failas, ivesties_suma, rusiavimo_suma, skirstymo_suma, strategija/*, pasirinkimas1, pasirinkimas2, pasirinkimas3, pasirinkimas4*/);
             }
             cout<<"Failas: "<<failas<<endl;
@@ -141,7 +141,7 @@ void konteinerio_testavimas(){
         }
         auto pabaigaV1=std::chrono::high_resolution_clock::now();
         galutinisV1+=pabaigaV1-pradziaV1;
-        cout<<"std::vector laikas su "<<sz[i]<<" elementu: "<<galutinisV1.count()<<" s\n";
+        cout<<"std::Vector laikas su "<<sz[i]<<" elementu: "<<galutinisV1.count()<<" s\n";
     }
 
     for (int i=0; i<5; i++){

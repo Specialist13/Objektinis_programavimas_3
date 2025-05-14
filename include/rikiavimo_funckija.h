@@ -9,6 +9,6 @@ bool raktas_p(Stud a, Stud b);
 bool raktas_gv(Stud a, Stud b);
 bool raktas_gm(Stud a, Stud b);
 
-void rikiavimas (vector<Stud> &studentai);
+void rikiavimas (Vector<Stud> &studentai);
 
 #endif

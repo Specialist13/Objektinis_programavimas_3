@@ -4,8 +4,8 @@
 #include "headers_main.h"
 #include "studentas.h"
 
-void rezimo_pasirinkimas (vector<Stud> &studentai);
-void isvesties_pasirinkimas(vector<Stud> &studentai);
-void failo_pasirinkimas(vector<Stud> &studentai);
+void rezimo_pasirinkimas (Vector<Stud> &studentai);
+void isvesties_pasirinkimas(Vector<Stud> &studentai);
+void failo_pasirinkimas(Vector<Stud> &studentai);
 
 #endif

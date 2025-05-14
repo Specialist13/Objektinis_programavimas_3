@@ -5,7 +5,7 @@
 #include "../include/isvesties_rezimai.h"
 #include "../include/rikiavimo_funckija.h"
 
-void strategija_1(vector<Stud> &studentai, vector<Stud> &vargsiukai, vector<Stud> &galvociai){
+void strategija_1(Vector<Stud> &studentai, Vector<Stud> &vargsiukai, Vector<Stud> &galvociai){
     for (Stud &studentas : studentai){
         if (studentas.getGalutinisVid()<5){
             vargsiukai.push_back(studentas);
@@ -19,7 +19,7 @@ void strategija_1(vector<Stud> &studentai, vector<Stud> &vargsiukai, vector<Stud
     galvociai.shrink_to_fit();
 }
 
-void ranka(vector<Stud> &studentai) {
+void ranka(Vector<Stud> &studentai) {
     cout << "Veskite duomenis apie studentus. Kai noresite baigti, iveskite 'n' kaip studento varda.\n";
     
     while (true) {
@@ -36,7 +36,7 @@ void ranka(vector<Stud> &studentai) {
     studentai.clear();
 }
 
-void pazymiu_generavimas (vector<Stud> &studentai){
+void pazymiu_generavimas (Vector<Stud> &studentai){
     srand(time(NULL));
     cout<<"Veskite duomenis apie studentus. Kai noresite baigti, iveskite 'n' kaip studento varda.\n";
     while (true){
@@ -50,7 +50,7 @@ void pazymiu_generavimas (vector<Stud> &studentai){
     studentai.clear();
 }
 
-void visko_generavimas (vector<Stud> &studentai){
+void visko_generavimas (Vector<Stud> &studentai){
     srand(time(NULL));
     int k=rand()%10+1;
     for (int i=0; i<k; i++){
@@ -61,7 +61,7 @@ void visko_generavimas (vector<Stud> &studentai){
     studentai.clear();
 }
 
-void skaitymas_is_failo (vector<Stud> &studentai, string failas, bool testavimas){
+void skaitymas_is_failo (Vector<Stud> &studentai, string failas, bool testavimas){
     std::ifstream fd(failas);
     if (fd.fail()){
         throw std::runtime_error("Failas nerastas.");
@@ -95,7 +95,7 @@ void failu_generavimas(int n){
 
     srand(time(NULL));
     string vardas, pavarde;
-    vector<int> pazymiai;
+    Vector<int> pazymiai;
     int egzaminas;
     double galutinis_vid, galutinis_med;
     for (int i = 0; i < n; ++i) {
@@ -120,7 +120,7 @@ void failu_generavimas(int n){
     cout << "Failas sukurtas: " << filename << "\n";
 }
 
-void studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius (vector<Stud> &studentai, string failas, std::chrono::duration<double>  &ivesties_suma, std::chrono::duration<double>  &rusiavimo_suma, std::chrono::duration<double>  &skirstymo_suma, int strategija/*, int pasirinkimas1, int pasirinkimas2, int pasirinkimas3, int pasirinkimas4*/){
+void studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius (Vector<Stud> &studentai, string failas, std::chrono::duration<double>  &ivesties_suma, std::chrono::duration<double>  &rusiavimo_suma, std::chrono::duration<double>  &skirstymo_suma, int strategija/*, int pasirinkimas1, int pasirinkimas2, int pasirinkimas3, int pasirinkimas4*/){
     auto ivesties_pradzia=std::chrono::high_resolution_clock::now();
     skaitymas_is_failo(studentai, failas, true);
     auto ivesties_pabaiga=std::chrono::high_resolution_clock::now();
@@ -132,7 +132,7 @@ void studentu_skaitymas_ir_skirstymas_i_vargsiukus_ir_galvocius (vector<Stud> &s
     auto rusiavimo_pabaiga=std::chrono::high_resolution_clock::now();
     rusiavimo_suma+=rusiavimo_pabaiga-rusiavimo_pradzia;
     auto skirstymo_pradzia=std::chrono::high_resolution_clock::now();
-    vector<Stud> vargsiukai, galvociai;
+    Vector<Stud> vargsiukai, galvociai;
     strategija_1(studentai, vargsiukai, galvociai);
     
     auto skirstymo_pabaiga=std::chrono::high_resolution_clock::now();

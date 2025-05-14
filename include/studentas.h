@@ -7,7 +7,7 @@
 
 class Stud : public Zmogus {
 private:
-    vector<int> pazymiai;
+    Vector<int> pazymiai;
     int egzaminas;
     double galutinis_vid=-1;
     double galutinis_med=-1;

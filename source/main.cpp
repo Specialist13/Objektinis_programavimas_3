@@ -7,7 +7,7 @@
 
 int main(){
     cout<<"Sveiki!\n";
-    vector<Stud> studentai;
+    Vector<Stud> studentai;
     Stud laikinas;
     rezimo_pasirinkimas(studentai);
 
