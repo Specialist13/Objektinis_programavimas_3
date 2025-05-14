@@ -25,7 +25,7 @@ public:
     T& operator[](size_t index);
     T& front();
     T& back();
-    T* data();
+    T* getData();
     T* begin();
     T* end();
     T* rbegin();

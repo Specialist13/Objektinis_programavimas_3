@@ -119,7 +119,7 @@ T& Vector<T>::back() {
 }
 
 template <typename T>
-T* Vector<T>::data() {
+T* Vector<T>::getData() {
     return data;
 }
 
@@ -135,7 +135,7 @@ T* Vector<T>::end() {
 
 template <typename T>
 T* Vector<T>::rbegin() {
-    return data+size-1;
+    return size ? data + size - 1 : data;
 }
 
 template <typename T>
@@ -160,7 +160,7 @@ size_t Vector<T>::max_size() const {
 
 template <typename T>
 void Vector<T>::reserve(size_t new_capacity) {
-    if (new_capacity>capacity){
+    if (new_capacity!=capacity){
         T* temp_data=new T[new_capacity];
         for (size_t i=0; i<size; i++){
             temp_data[i]=data[i];
@@ -179,7 +179,7 @@ size_t Vector<T>::getCapacity() const {
 template <typename T>
 void Vector<T>::shrink_to_fit() {
     if (capacity>size){
-        resize(size);
+        reserve(size);
     }
 }
 
@@ -194,7 +194,7 @@ void Vector<T>::clear() {
 template <typename T>
 void Vector<T>::insert(size_t index, const T& value){
     if (index>size) throw std::out_of_range("Insert position out of range");
-    if (size==capacity) resize(capacity==0 ? 1 : capacity*2);
+    if (size==capacity) reserve(capacity==0 ? 1 : capacity*2);
     for (size_t i=size; i>index; i--){
         data[i]=data[i-1];
     }
@@ -214,7 +214,7 @@ void Vector<T>::erase(size_t index) {
 
 template <typename T>
 void Vector<T>::push_back(const T& value) {
-    if (size==capacity) resize(capacity==0 ? 1 : capacity*2);
+    if (size==capacity) reserve(capacity==0 ? 1 : capacity*2);
     data[size++]=value;
 }
 
@@ -223,7 +223,7 @@ template <typename Range>
 void Vector<T>::append_range(const Range& other) {
     for (const auto& item : other) {
         if (size >= capacity)
-            reserve(capacity * 2);
+            reserve(capacity == 0 ? 1 : capacity * 2);
         data[size++] = item;
     }
 }
