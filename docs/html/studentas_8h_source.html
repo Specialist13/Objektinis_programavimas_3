@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Darbo su studentų duomenimis programa: include/studentas.h išeities tekstas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Darbo su studentų duomenimis programa
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Paieška" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('studentas_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">studentas.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="studentas_8h.html">Eiti į šio failo dokumentaciją.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef STUDENTAS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define STUDENTAS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="headers__main_8h.html">headers_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="skaiciavimo__funkcijos_8h.html">skaiciavimo_funkcijos.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="zmogus_8h.html">zmogus.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_stud.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_zmogus.html#a4df5ea418d34b2de7fe45dee7cc567df">Zmogus</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">   10</a></span>    vector&lt;int&gt; <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">   11</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">   12</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a>=-1;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_stud.html#a88118b4184ccda551f57c42706457688">   13</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a>=-1;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">   15</a></span>    <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>() : <a class="code hl_function" href="class_zmogus.html#a4df5ea418d34b2de7fe45dee7cc567df">Zmogus</a>(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a>(0) {}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>(std::istream&amp; is, <span class="keywordtype">string</span> rezimas);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_stud.html#accae27aebb74a6f4c9d84d5a2464f320">   17</a></span>    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_stud.html#accae27aebb74a6f4c9d84d5a2464f320">getVardas</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_zmogus.html#a56da52b45c537a31d2c1fc3a53a73c65">vardas</a>; }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_stud.html#a4f84f20ec6c6c01051a51a21fb7143db">   18</a></span>    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_stud.html#a4f84f20ec6c6c01051a51a21fb7143db">getPavarde</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5">pavarde</a>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_stud.html#a9de5bd76a8017a01a350d87a728679fd">   19</a></span>    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_stud.html#a9de5bd76a8017a01a350d87a728679fd">getGalutinisVid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_stud.html#a5d9a80eb05daa79580a12851968ba1b7">   20</a></span>    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_stud.html#a5d9a80eb05daa79580a12851968ba1b7">getGalutinisMed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::istream&amp; <a class="code hl_function" href="class_stud.html#ab16a1dc9ed2100549ad62375c03e6b20">readStudent</a>(std::istream&amp;, <span class="keywordtype">string</span> rezimas); </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_stud.html#a69ce6be81c2c6ae2f51efec624db8c94">skaiciuotiGalutini</a>();</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_stud.html#aa1c38d670d1f269ebd48588c40ad58db">   23</a></span>    <a class="code hl_function" href="class_stud.html#aa1c38d670d1f269ebd48588c40ad58db">~Stud</a>() {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.clear();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        cout&lt;&lt;<span class="stringliteral">&quot;Destruktorius\n&quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_stud.html#a7115844e12dadad25b9ff2de597f9eac">   27</a></span>    <a class="code hl_function" href="class_stud.html#a7115844e12dadad25b9ff2de597f9eac">Stud</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a> &amp;s) : <a class="code hl_function" href="class_zmogus.html#a4df5ea418d34b2de7fe45dee7cc567df">Zmogus</a>(s) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a> = s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a> = s.<a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a> = s.<a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a> = s.<a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_stud.html#a94d010cba4832e52eea069005bf7db04">   33</a></span>    <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>&amp; <a class="code hl_function" href="class_stud.html#a94d010cba4832e52eea069005bf7db04">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a> &amp;s) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;s) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="class_zmogus.html#a56da52b45c537a31d2c1fc3a53a73c65">vardas</a> = s.<a class="code hl_variable" href="class_zmogus.html#a56da52b45c537a31d2c1fc3a53a73c65">vardas</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5">pavarde</a> = s.<a class="code hl_variable" href="class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5">pavarde</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a> = s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a> = s.<a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a> = s.<a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a> = s.<a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_stud.html#a0dc47589ff92661e3bb7ea2070a4fd7d">   44</a></span>    <a class="code hl_function" href="class_stud.html#a0dc47589ff92661e3bb7ea2070a4fd7d">Stud</a>(<a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a> &amp;&amp;s) noexcept : <a class="code hl_function" href="class_zmogus.html#aa7a8ba4d3c4778f9b35d59eef3e72574">Zmogus</a>(std::move(s)) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a> = std::move(s.pazymiai);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a> = s.egzaminas;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a> = s.galutinis_vid;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a> = s.galutinis_med;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_stud.html#af5458aac5c975c0b6e35a40fac81756d">   50</a></span>    <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>&amp; <a class="code hl_function" href="class_stud.html#af5458aac5c975c0b6e35a40fac81756d">operator=</a>(<a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a> &amp;&amp;s) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;s) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="class_zmogus.html#a56da52b45c537a31d2c1fc3a53a73c65">vardas</a> = std::move(s.vardas);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5">pavarde</a> = std::move(s.pavarde);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a> = std::move(s.pazymiai);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a> = s.egzaminas;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a> = s.galutinis_vid;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a> = s.galutinis_med;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_stud.html#ab1296094a664d5c7adc2ec4a188b343c">   62</a></span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="class_stud.html#ab1296094a664d5c7adc2ec4a188b343c">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>&amp; s) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        os &lt;&lt; std::left&lt;&lt;std::setw(25)&lt;&lt; s.<a class="code hl_function" href="class_stud.html#accae27aebb74a6f4c9d84d5a2464f320">getVardas</a>() &lt;&lt;std::setw(25)&lt;&lt; s.<a class="code hl_function" href="class_stud.html#a4f84f20ec6c6c01051a51a21fb7143db">getPavarde</a>() &lt;&lt;std::setw(25)&lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.<a class="code hl_variable" href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">galutinis_vid</a> &lt;&lt; std::setw(25)&lt;&lt; s.<a class="code hl_variable" href="class_stud.html#a88118b4184ccda551f57c42706457688">galutinis_med</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_stud.html#a672dac4d6c85e5e6a26a1fb91600e021">   67</a></span>    <span class="keyword">friend</span> std::istream&amp; <a class="code hl_friend" href="class_stud.html#a672dac4d6c85e5e6a26a1fb91600e021">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code hl_function" href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud</a>&amp; s) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.clear();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">string</span> v, p;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        is &gt;&gt; v &gt;&gt; p;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        s.<a class="code hl_function" href="class_zmogus.html#a2158d2752cd52e970ac4c809446e9d8b">setVardas</a>(v);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        s.<a class="code hl_function" href="class_zmogus.html#ac34eb9eb78f1c75080df7230ca61f2d2">setPavarde</a>(p);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">int</span> pazymys;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">bool</span> isCin = (&amp;is == &amp;std::cin);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">while</span> (is &gt;&gt; pazymys) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (isCin &amp;&amp; pazymys == -1) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.push_back(pazymys);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span> (!isCin &amp;&amp; !s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.empty()) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            s.<a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a> = s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.back();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            s.<a class="code hl_variable" href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">pazymiai</a>.pop_back();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (isCin) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            is &gt;&gt; s.<a class="code hl_variable" href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">egzaminas</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        s.<a class="code hl_function" href="class_stud.html#a69ce6be81c2c6ae2f51efec624db8c94">skaiciuotiGalutini</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> is;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_stud_html_a059709cc6b6e924ff2edf83dac4f9320"><div class="ttname"><a href="class_stud.html#a059709cc6b6e924ff2edf83dac4f9320">Stud::galutinis_vid</a></div><div class="ttdeci">double galutinis_vid</div><div class="ttdef"><b>Definition</b> studentas.h:12</div></div>
+<div class="ttc" id="aclass_stud_html_a0dc47589ff92661e3bb7ea2070a4fd7d"><div class="ttname"><a href="class_stud.html#a0dc47589ff92661e3bb7ea2070a4fd7d">Stud::Stud</a></div><div class="ttdeci">Stud(Stud &amp;&amp;s) noexcept</div><div class="ttdef"><b>Definition</b> studentas.h:44</div></div>
+<div class="ttc" id="aclass_stud_html_a4f84f20ec6c6c01051a51a21fb7143db"><div class="ttname"><a href="class_stud.html#a4f84f20ec6c6c01051a51a21fb7143db">Stud::getPavarde</a></div><div class="ttdeci">string getPavarde() const override</div><div class="ttdef"><b>Definition</b> studentas.h:18</div></div>
+<div class="ttc" id="aclass_stud_html_a5d9a80eb05daa79580a12851968ba1b7"><div class="ttname"><a href="class_stud.html#a5d9a80eb05daa79580a12851968ba1b7">Stud::getGalutinisMed</a></div><div class="ttdeci">double getGalutinisMed() const</div><div class="ttdef"><b>Definition</b> studentas.h:20</div></div>
+<div class="ttc" id="aclass_stud_html_a672dac4d6c85e5e6a26a1fb91600e021"><div class="ttname"><a href="class_stud.html#a672dac4d6c85e5e6a26a1fb91600e021">Stud::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, Stud &amp;s)</div><div class="ttdef"><b>Definition</b> studentas.h:67</div></div>
+<div class="ttc" id="aclass_stud_html_a69ce6be81c2c6ae2f51efec624db8c94"><div class="ttname"><a href="class_stud.html#a69ce6be81c2c6ae2f51efec624db8c94">Stud::skaiciuotiGalutini</a></div><div class="ttdeci">void skaiciuotiGalutini()</div><div class="ttdef"><b>Definition</b> studentas.cpp:116</div></div>
+<div class="ttc" id="aclass_stud_html_a7115844e12dadad25b9ff2de597f9eac"><div class="ttname"><a href="class_stud.html#a7115844e12dadad25b9ff2de597f9eac">Stud::Stud</a></div><div class="ttdeci">Stud(const Stud &amp;s)</div><div class="ttdef"><b>Definition</b> studentas.h:27</div></div>
+<div class="ttc" id="aclass_stud_html_a88118b4184ccda551f57c42706457688"><div class="ttname"><a href="class_stud.html#a88118b4184ccda551f57c42706457688">Stud::galutinis_med</a></div><div class="ttdeci">double galutinis_med</div><div class="ttdef"><b>Definition</b> studentas.h:13</div></div>
+<div class="ttc" id="aclass_stud_html_a8db2a39b5038539018c6ffca51b606e5"><div class="ttname"><a href="class_stud.html#a8db2a39b5038539018c6ffca51b606e5">Stud::egzaminas</a></div><div class="ttdeci">int egzaminas</div><div class="ttdef"><b>Definition</b> studentas.h:11</div></div>
+<div class="ttc" id="aclass_stud_html_a94d010cba4832e52eea069005bf7db04"><div class="ttname"><a href="class_stud.html#a94d010cba4832e52eea069005bf7db04">Stud::operator=</a></div><div class="ttdeci">Stud &amp; operator=(const Stud &amp;s)</div><div class="ttdef"><b>Definition</b> studentas.h:33</div></div>
+<div class="ttc" id="aclass_stud_html_a97585839898d45dc9fc815d5b36e2b69"><div class="ttname"><a href="class_stud.html#a97585839898d45dc9fc815d5b36e2b69">Stud::Stud</a></div><div class="ttdeci">Stud()</div><div class="ttdef"><b>Definition</b> studentas.h:15</div></div>
+<div class="ttc" id="aclass_stud_html_a9de5bd76a8017a01a350d87a728679fd"><div class="ttname"><a href="class_stud.html#a9de5bd76a8017a01a350d87a728679fd">Stud::getGalutinisVid</a></div><div class="ttdeci">double getGalutinisVid() const</div><div class="ttdef"><b>Definition</b> studentas.h:19</div></div>
+<div class="ttc" id="aclass_stud_html_aa1c38d670d1f269ebd48588c40ad58db"><div class="ttname"><a href="class_stud.html#aa1c38d670d1f269ebd48588c40ad58db">Stud::~Stud</a></div><div class="ttdeci">~Stud()</div><div class="ttdef"><b>Definition</b> studentas.h:23</div></div>
+<div class="ttc" id="aclass_stud_html_ab1296094a664d5c7adc2ec4a188b343c"><div class="ttname"><a href="class_stud.html#ab1296094a664d5c7adc2ec4a188b343c">Stud::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Stud &amp;s)</div><div class="ttdef"><b>Definition</b> studentas.h:62</div></div>
+<div class="ttc" id="aclass_stud_html_ab16a1dc9ed2100549ad62375c03e6b20"><div class="ttname"><a href="class_stud.html#ab16a1dc9ed2100549ad62375c03e6b20">Stud::readStudent</a></div><div class="ttdeci">std::istream &amp; readStudent(std::istream &amp;, string rezimas)</div><div class="ttdef"><b>Definition</b> studentas.cpp:9</div></div>
+<div class="ttc" id="aclass_stud_html_accae27aebb74a6f4c9d84d5a2464f320"><div class="ttname"><a href="class_stud.html#accae27aebb74a6f4c9d84d5a2464f320">Stud::getVardas</a></div><div class="ttdeci">string getVardas() const override</div><div class="ttdef"><b>Definition</b> studentas.h:17</div></div>
+<div class="ttc" id="aclass_stud_html_ae40c7ea1db01c09344b0da1cac885a8a"><div class="ttname"><a href="class_stud.html#ae40c7ea1db01c09344b0da1cac885a8a">Stud::pazymiai</a></div><div class="ttdeci">vector&lt; int &gt; pazymiai</div><div class="ttdef"><b>Definition</b> studentas.h:10</div></div>
+<div class="ttc" id="aclass_stud_html_af5458aac5c975c0b6e35a40fac81756d"><div class="ttname"><a href="class_stud.html#af5458aac5c975c0b6e35a40fac81756d">Stud::operator=</a></div><div class="ttdeci">Stud &amp; operator=(Stud &amp;&amp;s) noexcept</div><div class="ttdef"><b>Definition</b> studentas.h:50</div></div>
+<div class="ttc" id="aclass_zmogus_html_a00799e1396c82e4f6dffa0edec1f24e5"><div class="ttname"><a href="class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5">Zmogus::pavarde</a></div><div class="ttdeci">string pavarde</div><div class="ttdef"><b>Definition</b> zmogus.h:9</div></div>
+<div class="ttc" id="aclass_zmogus_html_a2158d2752cd52e970ac4c809446e9d8b"><div class="ttname"><a href="class_zmogus.html#a2158d2752cd52e970ac4c809446e9d8b">Zmogus::setVardas</a></div><div class="ttdeci">void setVardas(const string &amp;v)</div><div class="ttdef"><b>Definition</b> zmogus.h:38</div></div>
+<div class="ttc" id="aclass_zmogus_html_a4df5ea418d34b2de7fe45dee7cc567df"><div class="ttname"><a href="class_zmogus.html#a4df5ea418d34b2de7fe45dee7cc567df">Zmogus::Zmogus</a></div><div class="ttdeci">Zmogus(string v, string p)</div><div class="ttdef"><b>Definition</b> zmogus.h:11</div></div>
+<div class="ttc" id="aclass_zmogus_html_a56da52b45c537a31d2c1fc3a53a73c65"><div class="ttname"><a href="class_zmogus.html#a56da52b45c537a31d2c1fc3a53a73c65">Zmogus::vardas</a></div><div class="ttdeci">string vardas</div><div class="ttdef"><b>Definition</b> zmogus.h:8</div></div>
+<div class="ttc" id="aclass_zmogus_html_aa7a8ba4d3c4778f9b35d59eef3e72574"><div class="ttname"><a href="class_zmogus.html#aa7a8ba4d3c4778f9b35d59eef3e72574">Zmogus::Zmogus</a></div><div class="ttdeci">Zmogus()</div><div class="ttdef"><b>Definition</b> zmogus.h:12</div></div>
+<div class="ttc" id="aclass_zmogus_html_ac34eb9eb78f1c75080df7230ca61f2d2"><div class="ttname"><a href="class_zmogus.html#ac34eb9eb78f1c75080df7230ca61f2d2">Zmogus::setPavarde</a></div><div class="ttdeci">void setPavarde(const string &amp;p)</div><div class="ttdef"><b>Definition</b> zmogus.h:39</div></div>
+<div class="ttc" id="aheaders__main_8h_html"><div class="ttname"><a href="headers__main_8h.html">headers_main.h</a></div></div>
+<div class="ttc" id="askaiciavimo__funkcijos_8h_html"><div class="ttname"><a href="skaiciavimo__funkcijos_8h.html">skaiciavimo_funkcijos.h</a></div></div>
+<div class="ttc" id="azmogus_8h_html"><div class="ttname"><a href="zmogus_8h.html">zmogus.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="studentas_8h.html">studentas.h</a></li>
+    <li class="footer">Sugeneruota <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
