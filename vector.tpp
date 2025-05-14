@@ -198,3 +198,32 @@ void Vector<T>::append_range(const Range& other) {
         data[size++] = item;
     }
 }
+
+template <typename T>
+void Vector<T>::pop_back() {
+    if (size > 0) {
+        data[size - 1].~T();
+        size--;
+    }
+}
+
+template <typename T>
+void Vector<T>::resize(size_t new_size) {
+    if (new_size > capacity) {
+        reserve(new_size);
+    }
+    for (size_t i = size; i < new_size; i++) {
+        data[i] = T();
+    }
+    for (size_t i = new_size; i < size; i++) {
+        data[i].~T();
+    }
+    size = new_size;
+}
+
+template <typename T>
+void Vector<T>::swap(Vector& other) {
+    std::swap(data, other.data);
+    std::swap(size, other.size);
+    std::swap(capacity, other.capacity);
+}
