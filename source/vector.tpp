@@ -185,9 +185,6 @@ void Vector<T>::shrink_to_fit() {
 
 template <typename T>
 void Vector<T>::clear() {
-    for (size_t i=0; i<size; i++){
-        data[i].~T();
-    }
     size=0;
 }
 
