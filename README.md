@@ -39,6 +39,8 @@ Išvedamas studento vardas, pavardė ir galutiniai pažymiai pagal vidurkį bei 
 | std::vector | 0 s | 0.0010051 s | 0.0040315 s | 0.0425115 s | 0.389473 s |
 | Vector | 0 s | 0.0005066 s | 0.0030259 s | 0.0273958 s | 0.353859 s |
 
+Visais atvejais mano sukurtas konteineris yra greitesnis nei std::vector.
+
 # :chart: V1.1 Testavimas
 
 | Optimizavimo flag | Greitis 100000 (struct) | Greitis 1000000 (struct) | Failo dydis | Greitis 100000 (class) | Greitis 1000000 (class) | Failo dydis |
