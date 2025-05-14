@@ -124,7 +124,6 @@ void duomenu_apdorojimo_testavimas (){
         }
         catch (std::runtime_error klaida){
             std::cerr<<klaida.what()<<endl;
-            duomenu_apdorojimo_testavimas();
         }
     }
 }
@@ -159,42 +158,52 @@ void konteinerio_testavimas(){
 
 void perskirstymu_testas(){
     int pV1=0, pV2=0;
-    vector<Stud> studentai;
-    std::ifstream fd("studentai10000000.txt");
-    if (fd.fail()){
-        throw std::runtime_error("Failas nerastas.");
-    }
-    std::stringstream ss;
-    ss << fd.rdbuf();
-    fd.close();
-    string linija;
-    std::getline(ss, linija);
-    while (std::getline(ss, linija)){
-        std::istringstream iss(linija);
-        Stud laikinas(iss, "failas");
-        if (studentai.size()==studentai.capacity()){
-            pV1++;
+    try {
+        vector<Stud> studentai;
+        std::ifstream fd("studentai10000000.txt");
+        if (fd.fail()){
+            throw std::runtime_error("Failas nerastas.");
         }
-        studentai.push_back(laikinas);
+        std::stringstream ss;
+        ss << fd.rdbuf();
+        fd.close();
+        string linija;
+        std::getline(ss, linija);
+        while (std::getline(ss, linija)){
+            std::istringstream iss(linija);
+            Stud laikinas(iss, "failas");
+            if (studentai.size()==studentai.capacity()){
+                pV1++;
+            }
+            studentai.push_back(laikinas);
+        }
+    }
+    catch (std::runtime_error klaida){
+        std::cerr<<klaida.what()<<endl;
     }
 
-    Vector<Stud> studentai1;
-    std::ifstream fd1("studentai10000000.txt");
-    if (fd1.fail()){
-        throw std::runtime_error("Failas nerastas.");
-    }
-    std::stringstream ss1;
-    ss1 << fd1.rdbuf();
-    fd1.close();
-    string linija1;
-    std::getline(ss1, linija1);
-    while (std::getline(ss1, linija1)){
-        std::istringstream iss1(linija1);
-        Stud laikinas(iss1, "failas");
-        if (studentai1.getSize()==studentai1.getCapacity()){
-            pV2++;
+    try {
+        Vector<Stud> studentai1;
+        std::ifstream fd1("studentai10000000.txt");
+        if (fd1.fail()){
+            throw std::runtime_error("Failas nerastas.");
         }
-        studentai1.push_back(laikinas);
+        std::stringstream ss1;
+        ss1 << fd1.rdbuf();
+        fd1.close();
+        string linija1;
+        std::getline(ss1, linija1);
+        while (std::getline(ss1, linija1)){
+            std::istringstream iss1(linija1);
+            Stud laikinas(iss1, "failas");
+            if (studentai1.getSize()==studentai1.getCapacity()){
+                pV2++;
+            }
+            studentai1.push_back(laikinas);
+        }
+    }
+    catch (std::runtime_error klaida){
+        std::cerr<<klaida.what()<<endl;
     }
     cout<<"std::vector perskirstymu kiekis: "<<pV1<<endl;
     cout<<"Vector perskirstymu kiekis: "<<pV2<<endl;
