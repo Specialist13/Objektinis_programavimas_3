@@ -42,6 +42,26 @@ Išvedamas studento vardas, pavardė ir galutiniai pažymiai pagal vidurkį bei 
 Visais atvejais mano sukurtas konteineris yra greitesnis nei std::vector.
 Abu konteineriai yra perskirstomi 25 kartus, kai vedami 10 milijonų studentų.
 
+### Programos veikimas su nauju Vector
+
+Failas: studentai100000.txt
+Įvesties trukmė: 0.169673 s
+Rušiavimo trukmė: 0.234799 s
+Skirstymo trukmė: 0.0549262 s
+Bendra trukmė: 0.459398 s
+Failas: studentai1000000.txt
+Įvesties trukmė: 1.65126 s
+Rušiavimo trukmė: 3.41304 s
+Skirstymo trukmė: 0.604403 s
+Bendra trukmė: 5.66871 s
+Failas: studentai10000000.txt
+Įvesties trukmė: 16.2718 s
+Rušiavimo trukmė: 44.0906 s
+Skirstymo trukmė: 7.22463 s
+Bendra trukme: 67.587 s
+
+Tai yra lėčiau nei su std::vector.
+
 # :chart: V1.1 Testavimas
 
 | Optimizavimo flag | Greitis 100000 (struct) | Greitis 1000000 (struct) | Failo dydis | Greitis 100000 (class) | Greitis 1000000 (class) | Failo dydis |
