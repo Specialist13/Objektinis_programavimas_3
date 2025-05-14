@@ -25,6 +25,46 @@ Vector<T>& Vector<T>::operator=(const Vector& other) {
 }
 
 template <typename T>
+void Vector<T>::assign(size_t count, const T& value) {
+    if (count > capacity) {
+        delete[] data;
+        capacity = count;
+        data = new T[capacity];
+    }
+    size = count;
+    for (size_t i = 0; i < size; ++i) {
+        data[i] = value;
+    }
+}
+
+template <typename T>
+void Vector<T>::assign(const T* first, const T* last) {
+    size_t count = last - first;
+    if (count > capacity) {
+        delete[] data;
+        capacity = count;
+        data = new T[capacity];
+    }
+    size = count;
+    for (size_t i = 0; i < size; ++i) {
+        data[i] = first[i];
+    }
+}
+
+template <typename T>
+void Vector<T>::assign(const Vector& other) {
+    if (this != &other) {
+        delete[] data;
+        size = other.size;
+        capacity = other.capacity;
+        data = new T[capacity];
+        for (size_t i = 0; i < size; ++i) {
+            data[i] = other.data[i];
+        }
+    }
+}
+
+template <typename T>
 T& Vector<T>::at(size_t index) {
     if (index>=size){
         throw std::out_of_range("Index out of range");
@@ -47,6 +87,11 @@ T& Vector<T>::front() {
 template <typename T>
 T& Vector<T>::back() {
     return data[size-1];
+}
+
+template <typename T>
+T* Vector<T>::data() {
+    return data;
 }
 
 template <typename T>
@@ -124,7 +169,7 @@ void Vector<T>::insert(size_t index, const T& value){
     for (size_t i=size; i>index; i--){
         data[i]=data[i-1];
     }
-    data[pos]=value;
+    data[index]=value;
     size++;
 }
 
@@ -136,6 +181,12 @@ void Vector<T>::erase(size_t index) {
     }
     data[size-1].~T();
     size--;
+}
+
+template <typename T>
+void Vector<T>::push_back(const T& value) {
+    if (size==capacity) resize(capacity==0 ? 1 : capacity*2);
+    data[size++]=value;
 }
 
 template <typename T>

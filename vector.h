@@ -15,10 +15,14 @@ public:
     Vector(size_t init_capacity=10);
     ~Vector();
     Vector& operator= (const Vector& other);
+    void assign(size_t count, const T& value);
+    void assign(const T* first, const T* last);
+    void assign(const Vector& other);
     T& at(size_t index);
     T& operator[](size_t index);
     T& front();
     T& back();
+    T* data();
     T* begin();
     T* end();
     T* rbegin();
@@ -32,9 +36,7 @@ public:
     void clear();
     void insert(size_t index, const T& value);
     void erase(size_t index);
-    void emplace(size_t index, const T& value);
     void push_back(const T& value);
-    void emplace_back(const T& value);
     template <typename Range>
     void append_range(const Range& other);
     void pop_back();
